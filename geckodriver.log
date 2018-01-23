@@ -17243,3 +17243,1778 @@ JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, li
 1516729710471	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
 JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516733556757	geckodriver	INFO	geckodriver 0.19.1
+1516733556865	geckodriver	INFO	Listening on 127.0.0.1:55130
+1516733558028	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.7K1YJkhJjYt3"
+1516733558941	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:52:40.649 plugin-container[63912:36174365] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733561304	Marionette	INFO	Listening on port 55141
+1516733561337	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733562120	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733562144	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733562587	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733562587	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733563190	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733563748	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733564100	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516733603303	geckodriver	INFO	geckodriver 0.19.1
+1516733603400	geckodriver	INFO	Listening on 127.0.0.1:55242
+1516733604449	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.FjJZj64E2yv6"
+1516733605258	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:53:26.533 plugin-container[63933:36175415] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733607052	Marionette	INFO	Listening on port 55253
+1516733607162	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733607238	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733607275	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733607410	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733607411	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733608009	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516733608537	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733608870	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516733776282	geckodriver	INFO	geckodriver 0.19.1
+1516733776365	geckodriver	INFO	Listening on 127.0.0.1:55360
+1516733777511	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.5xARkS91DQDu"
+1516733778201	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:56:19.303 plugin-container[63997:36178425] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733779756	Marionette	INFO	Listening on port 55372
+1516733779821	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733779900	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733779958	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733780214	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733780214	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733780754	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516733781292	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733781618	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516733831683	geckodriver	INFO	geckodriver 0.19.1
+1516733831763	geckodriver	INFO	Listening on 127.0.0.1:55460
+1516733832824	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.L4sBqCcERCRy"
+1516733833512	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:57:14.718 plugin-container[64020:36179464] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733835203	Marionette	INFO	Listening on port 55471
+1516733835233	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733835322	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733835360	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733835617	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733835618	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733836265	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516733836805	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733837160	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516733883733	geckodriver	INFO	geckodriver 0.19.1
+1516733883829	geckodriver	INFO	Listening on 127.0.0.1:55560
+1516733884878	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.D3jr8d6pwQXu"
+1516733885548	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:58:06.749 plugin-container[64041:36180517] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8243, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733887194	Marionette	INFO	Listening on port 55571
+1516733887263	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733887342	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733887405	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733887745	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733887745	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733888300	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733888799	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733889138	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516733894518	geckodriver	INFO	geckodriver 0.19.1
+1516733894602	geckodriver	INFO	Listening on 127.0.0.1:55660
+1516733895664	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.ldpcTvni52vR"
+1516733896381	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:58:17.551 plugin-container[64049:36181166] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733898110	Marionette	INFO	Listening on port 55671
+1516733898192	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733898282	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733898342	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733898652	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733898653	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733899320	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516733899879	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733900212	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516733945405	geckodriver	INFO	geckodriver 0.19.1
+1516733945493	geckodriver	INFO	Listening on 127.0.0.1:55761
+1516733946563	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.Yr8V0fJGHX3m"
+1516733947262	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:59:08.525 plugin-container[64072:36182275] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733949032	Marionette	INFO	Listening on port 55772
+1516733949072	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733949167	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733949203	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733949551	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733949552	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733950182	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516733950674	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733951028	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516733956447	geckodriver	INFO	geckodriver 0.19.1
+1516733956536	geckodriver	INFO	Listening on 127.0.0.1:55863
+1516733957581	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.rdk6SJvDGoIF"
+1516733958202	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:59:19.396 plugin-container[64080:36182996] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x873f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733959868	Marionette	INFO	Listening on port 55874
+1516733959905	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733959983	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733960058	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733960275	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733960275	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733960835	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516733961317	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733961666	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516733975849	geckodriver	INFO	geckodriver 0.19.1
+1516733975931	geckodriver	INFO	Listening on 127.0.0.1:55963
+1516733977003	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.TShPnSE9814n"
+1516733977672	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:59:38.933 plugin-container[64096:36183717] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7743, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733979454	Marionette	INFO	Listening on port 55974
+1516733979517	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733979601	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733979689	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733979846	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733979846	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733980439	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516733980899	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733981251	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516733988682	geckodriver	INFO	geckodriver 0.19.1
+1516733988762	geckodriver	INFO	Listening on 127.0.0.1:56062
+1516733989845	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.7dNblpCqbm5x"
+1516733990576	Marionette	INFO	Enabled via --marionette
+2018-01-23 10:59:51.780 plugin-container[64103:36184441] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516733992314	Marionette	INFO	Listening on port 56073
+1516733992376	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516733992470	Marionette	DEBUG	Register listener.js for window 2147483649
+1516733992537	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516733992908	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516733992908	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516733993618	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516733994203	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516733994552	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516734088113	geckodriver	INFO	geckodriver 0.19.1
+1516734088198	geckodriver	INFO	Listening on 127.0.0.1:56172
+1516734089263	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.gFYGDneKG5kU"
+1516734089938	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:01:31.132 plugin-container[64142:36185968] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8243, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516734091617	Marionette	INFO	Listening on port 56183
+1516734091686	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516734091766	Marionette	DEBUG	Register listener.js for window 2147483649
+1516734091825	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516734092089	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516734092089	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516734092672	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516734093160	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516734093539	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516734099916	geckodriver	INFO	geckodriver 0.19.1
+1516734100008	geckodriver	INFO	Listening on 127.0.0.1:56270
+1516734101094	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.Kxo8c6AA3ILx"
+1516734101751	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:01:42.843 plugin-container[64149:36186610] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x733f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516734103350	Marionette	INFO	Listening on port 56281
+1516734103420	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516734103496	Marionette	DEBUG	Register listener.js for window 2147483649
+1516734103540	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516734103769	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516734103770	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516734104310	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516734104771	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516734105114	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735589157	geckodriver	INFO	geckodriver 0.19.1
+1516735589247	geckodriver	INFO	Listening on 127.0.0.1:56505
+1516735590402	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.ZXRkBYl43k22"
+1516735591251	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:26:32.808 plugin-container[64619:36205492] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x870b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735593286	Marionette	INFO	Listening on port 56516
+1516735593403	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735593491	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735593527	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735593917	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735593917	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735594565	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735595145	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735595478	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735601905	geckodriver	INFO	geckodriver 0.19.1
+1516735602004	geckodriver	INFO	Listening on 127.0.0.1:56612
+1516735603061	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.2lc2n0ua2cbk"
+1516735603764	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:26:44.951 plugin-container[64625:36206093] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x743f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735605426	Marionette	INFO	Listening on port 56623
+1516735605474	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735605560	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735605649	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735605893	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735605893	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735606457	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735606968	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735607350	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735613806	geckodriver	INFO	geckodriver 0.19.1
+1516735613890	geckodriver	INFO	Listening on 127.0.0.1:56712
+1516735614960	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.7Ze3NDjHzv53"
+1516735615590	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:26:56.635 plugin-container[64631:36206750] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735617085	Marionette	INFO	Listening on port 56723
+1516735617152	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735617233	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735617275	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735617509	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735617510	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735618050	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735618569	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735618893	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735625349	geckodriver	INFO	geckodriver 0.19.1
+1516735625433	geckodriver	INFO	Listening on 127.0.0.1:56810
+1516735626481	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.UJ39KSe6mkpb"
+1516735627134	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:27:08.204 plugin-container[64637:36207398] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735628650	Marionette	INFO	Listening on port 56821
+1516735628701	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735628777	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735628815	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735629014	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735629015	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735629599	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735630128	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735630483	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735636878	geckodriver	INFO	geckodriver 0.19.1
+1516735636967	geckodriver	INFO	Listening on 127.0.0.1:56906
+1516735638014	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.lzhzEwAs1xMU"
+1516735638759	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:27:19.861 plugin-container[64647:36208107] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735640304	Marionette	INFO	Listening on port 56917
+1516735640336	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735640413	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735640452	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735640711	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735640712	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735641284	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735641887	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735642219	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735648604	geckodriver	INFO	geckodriver 0.19.1
+1516735648682	geckodriver	INFO	Listening on 127.0.0.1:57004
+1516735649744	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.bqHBWLzKOq3H"
+1516735650379	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:27:31.501 plugin-container[64652:36208771] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735651928	Marionette	INFO	Listening on port 57017
+1516735652052	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735652118	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735652148	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735652545	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735652546	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735653301	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735654114	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735654434	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735660870	geckodriver	INFO	geckodriver 0.19.1
+1516735660956	geckodriver	INFO	Listening on 127.0.0.1:57105
+1516735662013	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.r1N5qY9gROR8"
+1516735662671	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:27:43.724 plugin-container[64658:36209358] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x833f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735664167	Marionette	INFO	Listening on port 57117
+1516735664245	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735664322	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735664383	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735664819	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735664819	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735665519	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735666197	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735666530	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735672904	geckodriver	INFO	geckodriver 0.19.1
+1516735672982	geckodriver	INFO	Listening on 127.0.0.1:57201
+1516735674051	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.dMcoD8Sc7zBH"
+1516735674830	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:27:55.887 plugin-container[64664:36209996] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735676329	Marionette	INFO	Listening on port 57212
+1516735676363	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735676437	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735676480	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735676742	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735676742	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735677391	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735677952	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735678290	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735684741	geckodriver	INFO	geckodriver 0.19.1
+1516735684819	geckodriver	INFO	Listening on 127.0.0.1:57299
+1516735685885	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.IvZ4Rc222jZH"
+1516735686569	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:28:07.649 plugin-container[64670:36210649] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x813f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735688097	Marionette	INFO	Listening on port 57310
+1516735688202	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735688277	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735688330	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735688543	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735688544	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735689166	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735689741	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735690091	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735696478	geckodriver	INFO	geckodriver 0.19.1
+1516735696558	geckodriver	INFO	Listening on 127.0.0.1:57396
+1516735697626	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.3Y0u8bwnocas"
+1516735698384	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:28:19.509 plugin-container[64678:36211246] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735700027	Marionette	INFO	Listening on port 57407
+1516735700060	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735700140	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735700186	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735700577	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735700578	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735701181	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735701741	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735702071	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735708474	geckodriver	INFO	geckodriver 0.19.1
+1516735708569	geckodriver	INFO	Listening on 127.0.0.1:57496
+1516735709624	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.MHrB2rlI4G70"
+1516735710322	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:28:31.423 plugin-container[64685:36211949] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8403, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735711860	Marionette	INFO	Listening on port 57507
+1516735711946	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735712024	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735712057	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735712282	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735712282	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735712838	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735713348	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735713690	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516735720084	geckodriver	INFO	geckodriver 0.19.1
+1516735720167	geckodriver	INFO	Listening on 127.0.0.1:57596
+1516735721226	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.gZ6xldbiNw4R"
+1516735721984	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:28:43.065 plugin-container[64691:36212520] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735723533	Marionette	INFO	Listening on port 57607
+1516735723647	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735723722	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735723758	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735723999	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735723999	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735724541	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735725073	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735725415	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516735731864	geckodriver	INFO	geckodriver 0.19.1
+1516735731965	geckodriver	INFO	Listening on 127.0.0.1:57695
+1516735733002	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.5EOORmGQ5U92"
+1516735733640	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:28:54.724 plugin-container[64697:36213160] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x773f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735735164	Marionette	INFO	Listening on port 57706
+1516735735208	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735735283	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735735332	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735735656	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735735657	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735736313	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735736901	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735737226	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516735743616	geckodriver	INFO	geckodriver 0.19.1
+1516735743719	geckodriver	INFO	Listening on 127.0.0.1:57790
+1516735744773	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.62spACGdYlvo"
+1516735745444	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:29:06.563 plugin-container[64702:36213799] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7203, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735747019	Marionette	INFO	Listening on port 57801
+1516735747106	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735747183	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735747235	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735747543	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735747544	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735748187	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735748705	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735749040	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735755433	geckodriver	INFO	geckodriver 0.19.1
+1516735755542	geckodriver	INFO	Listening on 127.0.0.1:57886
+1516735756569	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.AVlwz1weCEoC"
+1516735757222	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:29:18.430 plugin-container[64710:36214387] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8903, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735758927	Marionette	INFO	Listening on port 57897
+1516735758983	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735759063	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735759104	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735759287	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735759288	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735759846	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735760390	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735760721	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735767093	geckodriver	INFO	geckodriver 0.19.1
+1516735767179	geckodriver	INFO	Listening on 127.0.0.1:57984
+1516735768219	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.bw0PdOGRM91t"
+1516735768854	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:29:30.004 plugin-container[64718:36215045] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x843f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735770581	Marionette	INFO	Listening on port 57995
+1516735770652	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735770750	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735770815	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735770977	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735770978	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735771594	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735772098	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735772436	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735778809	geckodriver	INFO	geckodriver 0.19.1
+1516735778887	geckodriver	INFO	Listening on 127.0.0.1:58084
+1516735779948	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.DKtgPj0X9kgd"
+1516735780564	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:29:41.664 plugin-container[64725:36215708] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7843, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735782090	Marionette	INFO	Listening on port 58095
+1516735782161	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735782237	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735782283	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735782615	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735782615	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735783134	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735783605	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735783935	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735790342	geckodriver	INFO	geckodriver 0.19.1
+1516735790430	geckodriver	INFO	Listening on 127.0.0.1:58177
+1516735791477	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.Qk2VohebkhoE"
+1516735792105	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:29:53.174 plugin-container[64732:36216394] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735793635	Marionette	INFO	Listening on port 58188
+1516735793688	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735793761	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735793816	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735794047	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735794047	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735794593	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735795140	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735795494	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735801864	geckodriver	INFO	geckodriver 0.19.1
+1516735801945	geckodriver	INFO	Listening on 127.0.0.1:58272
+1516735803009	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.fDS7Hd8o3qNO"
+1516735803619	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:30:04.665 plugin-container[64738:36217045] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8403, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735805122	Marionette	INFO	Listening on port 58283
+1516735805228	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735805302	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735805331	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735805537	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735805537	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735806091	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735806628	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735806986	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735813374	geckodriver	INFO	geckodriver 0.19.1
+1516735813460	geckodriver	INFO	Listening on 127.0.0.1:58365
+1516735814521	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.TR5Z9kcSxoQC"
+1516735815443	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:30:16.524 plugin-container[64749:36217701] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8503, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735816946	Marionette	INFO	Listening on port 58376
+1516735817032	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735817104	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735817154	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735817287	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735817288	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735817886	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735818352	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735818663	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 64749, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1516735825033	geckodriver	INFO	geckodriver 0.19.1
+1516735825110	geckodriver	INFO	Listening on 127.0.0.1:58464
+1516735826180	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.phnUNnwfuoCr"
+1516735826777	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:30:27.877 plugin-container[64756:36218341] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x813f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735828309	Marionette	INFO	Listening on port 58475
+1516735828393	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735828475	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735828518	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735828801	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735828802	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735829369	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735829884	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735830197	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735836567	geckodriver	INFO	geckodriver 0.19.1
+1516735836653	geckodriver	INFO	Listening on 127.0.0.1:58567
+1516735837695	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.qxopmKyN282I"
+1516735838293	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:30:39.318 plugin-container[64763:36218978] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7e3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735839754	Marionette	INFO	Listening on port 58578
+1516735839801	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735839874	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735839918	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735840174	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735840175	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735840765	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735843466	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735843820	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735853208	geckodriver	INFO	geckodriver 0.19.1
+1516735853353	geckodriver	INFO	Listening on 127.0.0.1:58659
+1516735854398	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.UuTwt167s8L1"
+1516735855272	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:30:56.455 plugin-container[64772:36219768] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7c3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735856874	Marionette	INFO	Listening on port 58670
+1516735856918	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735856994	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735857066	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735857447	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735857447	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735858066	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735858599	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735858930	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516735865329	geckodriver	INFO	geckodriver 0.19.1
+1516735865412	geckodriver	INFO	Listening on 127.0.0.1:58760
+1516735866458	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.LW1sGAosvxgj"
+1516735867123	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:31:08.198 plugin-container[64777:36220416] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735868658	Marionette	INFO	Listening on port 58771
+1516735868778	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735868852	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735868887	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735869129	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735869129	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735869765	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735870266	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735870591	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735877002	geckodriver	INFO	geckodriver 0.19.1
+1516735877095	geckodriver	INFO	Listening on 127.0.0.1:58854
+1516735878149	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.DAPWAJDLL11c"
+1516735878781	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:31:19.858 plugin-container[64785:36221010] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735880320	Marionette	INFO	Listening on port 58865
+1516735880382	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735880465	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735880506	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735880948	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735880948	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735881897	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735882712	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735883049	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735889467	geckodriver	INFO	geckodriver 0.19.1
+1516735889553	geckodriver	INFO	Listening on 127.0.0.1:58948
+1516735890616	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.qz18DYRls1q0"
+1516735891393	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:31:32.518 plugin-container[64792:36221717] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x813f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735892975	Marionette	INFO	Listening on port 58959
+1516735893042	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735893120	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735893177	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735893358	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735893359	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735893902	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735894378	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735894715	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516735901105	geckodriver	INFO	geckodriver 0.19.1
+1516735901192	geckodriver	INFO	Listening on 127.0.0.1:59048
+1516735902245	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.bhAmQzvhNYQQ"
+1516735902974	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:31:44.017 plugin-container[64798:36222295] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7c3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735904497	Marionette	INFO	Listening on port 59059
+1516735904572	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735904653	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735904706	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735904927	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735904927	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735905458	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735906010	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735906332	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735912743	geckodriver	INFO	geckodriver 0.19.1
+1516735912822	geckodriver	INFO	Listening on 127.0.0.1:59144
+1516735913890	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.lQKxO1bFcBU3"
+1516735914666	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:31:55.715 plugin-container[64804:36222909] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7c43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735916154	Marionette	INFO	Listening on port 59155
+1516735916206	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735916284	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735916342	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735916862	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735916862	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735917575	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735918161	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735918496	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516735924961	geckodriver	INFO	geckodriver 0.19.1
+1516735925043	geckodriver	INFO	Listening on 127.0.0.1:59241
+1516735926089	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.9KWP30S7lBW1"
+1516735926702	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:32:07.754 plugin-container[64809:36223556] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7c3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735928219	Marionette	INFO	Listening on port 59252
+1516735928286	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735928373	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735928430	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735928857	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735928857	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735929623	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735930247	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735930564	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735936982	geckodriver	INFO	geckodriver 0.19.1
+1516735937064	geckodriver	INFO	Listening on 127.0.0.1:59336
+1516735938132	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.cuHz5g29mf9R"
+1516735938771	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:32:19.868 plugin-container[64818:36224172] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735940308	Marionette	INFO	Listening on port 59347
+1516735940423	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735940501	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735940533	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735940816	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735940817	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735941396	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735941945	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735942277	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735948682	geckodriver	INFO	geckodriver 0.19.1
+1516735948768	geckodriver	INFO	Listening on 127.0.0.1:59432
+1516735949818	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.lwhsNT37j02M"
+1516735950451	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:32:31.577 plugin-container[64825:36224785] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7947, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735952101	Marionette	INFO	Listening on port 59443
+1516735952129	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735952212	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735952320	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735952540	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735952541	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735953126	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735953629	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735953964	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516735960391	geckodriver	INFO	geckodriver 0.19.1
+1516735960475	geckodriver	INFO	Listening on 127.0.0.1:59530
+1516735961544	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.Ohfl2hYdgaf5"
+1516735962185	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:32:43.264 plugin-container[64831:36225421] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x793f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735963707	Marionette	INFO	Listening on port 59541
+1516735963741	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735963817	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735963859	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735964095	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735964096	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735964635	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735965113	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735965454	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735971860	geckodriver	INFO	geckodriver 0.19.1
+1516735971937	geckodriver	INFO	Listening on 127.0.0.1:59624
+1516735973002	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.GZA5VyqlKSfV"
+1516735973682	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:32:54.771 plugin-container[64837:36226056] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735975214	Marionette	INFO	Listening on port 59635
+1516735975317	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735975394	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735975438	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735975587	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735975587	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735976158	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735976706	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735977040	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735983447	geckodriver	INFO	geckodriver 0.19.1
+1516735983533	geckodriver	INFO	Listening on 127.0.0.1:59721
+1516735984612	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.7fFZjshgkjTf"
+1516735985374	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:33:06.426 plugin-container[64842:36226713] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8843, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735986867	Marionette	INFO	Listening on port 59732
+1516735986907	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735986982	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735987022	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735987318	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735987318	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735987876	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735988343	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516735988677	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516735995097	geckodriver	INFO	geckodriver 0.19.1
+1516735995181	geckodriver	INFO	Listening on 127.0.0.1:59818
+1516735996239	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.JUgogNJGPgET"
+1516735996886	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:33:17.976 plugin-container[64849:36227347] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7e03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516735998403	Marionette	INFO	Listening on port 59829
+1516735998431	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516735998501	Marionette	DEBUG	Register listener.js for window 2147483649
+1516735998527	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516735998765	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516735998765	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516735999306	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516735999846	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516736000159	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516736006543	geckodriver	INFO	geckodriver 0.19.1
+1516736006634	geckodriver	INFO	Listening on 127.0.0.1:59911
+1516736007686	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.MGNtW3rXVAp8"
+1516736008394	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:33:29.433 plugin-container[64856:36227997] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516736009862	Marionette	INFO	Listening on port 59922
+1516736009924	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516736010002	Marionette	DEBUG	Register listener.js for window 2147483649
+1516736010045	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516736010352	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516736010352	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516736010871	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516736011368	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516736011687	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516736018103	geckodriver	INFO	geckodriver 0.19.1
+1516736018195	geckodriver	INFO	Listening on 127.0.0.1:60006
+1516736019245	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.uApAfyxMB4jf"
+1516736019850	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:33:40.870 plugin-container[64862:36228632] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x823f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516736021383	Marionette	INFO	Listening on port 60020
+1516736021444	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516736021522	Marionette	DEBUG	Register listener.js for window 2147483649
+1516736021575	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516736021786	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516736021786	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516736022333	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516736022807	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516736023129	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516736029523	geckodriver	INFO	geckodriver 0.19.1
+1516736029601	geckodriver	INFO	Listening on 127.0.0.1:60104
+1516736030682	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.NPKZdJFKW5Er"
+1516736031405	Marionette	INFO	Enabled via --marionette
+2018-01-23 11:33:52.734 plugin-container[64869:36229328] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x823f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740086053	Marionette	INFO	Listening on port 60115
+1516740508343	geckodriver	INFO	geckodriver 0.19.1
+1516740508429	geckodriver	INFO	Listening on 127.0.0.1:64890
+1516740509615	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.geBUlGsh4wce"
+1516740510576	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:48:31.887 plugin-container[67074:36356680] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740512451	Marionette	INFO	Listening on port 64901
+1516740512509	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740512587	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740512671	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740513109	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740513109	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740513742	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740514713	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740515051	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516740521495	geckodriver	INFO	geckodriver 0.19.1
+1516740521586	geckodriver	INFO	Listening on 127.0.0.1:64997
+1516740522720	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.kbVJyUSqloQA"
+1516740523464	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:48:44.642 plugin-container[67081:36357376] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7c03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740525200	Marionette	INFO	Listening on port 65008
+1516740525230	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740525314	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740525361	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740525640	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740525640	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740526257	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516740527194	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740527543	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516740534046	geckodriver	INFO	geckodriver 0.19.1
+1516740534129	geckodriver	INFO	Listening on 127.0.0.1:65097
+1516740535225	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.tBLYETpvxMds"
+1516740535960	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:48:57.103 plugin-container[67088:36358019] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740537632	Marionette	INFO	Listening on port 65108
+1516740537752	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740537835	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740537869	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740538099	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740538100	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740538646	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516740539570	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740539903	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516740546287	geckodriver	INFO	geckodriver 0.19.1
+1516740546376	geckodriver	INFO	Listening on 127.0.0.1:65198
+1516740547436	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.jsnG716pM8dq"
+1516740548161	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:49:09.705 plugin-container[67093:36358723] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7347, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740550315	Marionette	INFO	Listening on port 65209
+1516740550447	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740550545	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740550596	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740550955	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740550955	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740551622	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740552582	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740552940	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516740559395	geckodriver	INFO	geckodriver 0.19.1
+1516740559472	geckodriver	INFO	Listening on 127.0.0.1:65307
+1516740560598	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.d4HJZbgpbObP"
+1516740561435	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:49:22.734 plugin-container[67098:36359324] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x793f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740563277	Marionette	INFO	Listening on port 65318
+1516740563340	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740563442	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740563526	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740563774	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740563775	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740564349	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516740565298	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740565706	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516740572252	geckodriver	INFO	geckodriver 0.19.1
+1516740572375	geckodriver	INFO	Listening on 127.0.0.1:65410
+1516740573441	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.iv2uTIGbwnr5"
+1516740574393	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:49:35.672 plugin-container[67109:36360089] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b47, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740576156	Marionette	INFO	Listening on port 65422
+1516740576271	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740576365	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740576409	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740576772	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740576773	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740577489	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516740578439	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740578776	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516740585305	geckodriver	INFO	geckodriver 0.19.1
+1516740585413	geckodriver	INFO	Listening on 127.0.0.1:65516
+1516740586469	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.UZaowf8oLPse"
+1516740587793	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:49:49.592 plugin-container[67115:36360721] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8743, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740590201	Marionette	INFO	Listening on port 65527
+1516740590240	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740590337	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740590426	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740590738	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740590738	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740591332	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740592257	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740592640	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516740599276	geckodriver	INFO	geckodriver 0.19.1
+1516740599381	geckodriver	INFO	Listening on 127.0.0.1:49254
+1516740600460	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.9Numc62CWXxa"
+1516740601383	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:50:02.579 plugin-container[67123:36362029] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740603036	Marionette	INFO	Listening on port 49266
+1516740603092	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740603177	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740603237	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740603457	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740603458	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740604074	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516740605023	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740605347	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516740611767	geckodriver	INFO	geckodriver 0.19.1
+1516740611858	geckodriver	INFO	Listening on 127.0.0.1:49359
+1516740612922	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.YakXdv3zgFil"
+1516740613585	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:50:14.822 plugin-container[67130:36362703] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8743, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740615357	Marionette	INFO	Listening on port 49370
+1516740615444	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740615534	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740615579	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740615890	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740615890	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740616540	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516740617494	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740617838	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516740624559	geckodriver	INFO	geckodriver 0.19.1
+1516740624707	geckodriver	INFO	Listening on 127.0.0.1:49467
+1516740625842	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.zNoOiUDqW7uV"
+1516740627182	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:50:29.151 plugin-container[67140:36363453] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8243, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740629911	Marionette	INFO	Listening on port 49479
+1516740629932	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740630042	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740630091	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740630344	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740630344	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740631130	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740632075	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740632475	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516740638948	geckodriver	INFO	geckodriver 0.19.1
+1516740639038	geckodriver	INFO	Listening on 127.0.0.1:49624
+1516740640083	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.e9H1iBPewlHd"
+1516740640746	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:50:41.882 plugin-container[67145:36364143] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516740642362	Marionette	INFO	Listening on port 49635
+1516740642399	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516740642482	Marionette	DEBUG	Register listener.js for window 2147483649
+1516740642566	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516740642843	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516740642843	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516740643429	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516740644393	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516740644714	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516740651103	geckodriver	INFO	geckodriver 0.19.1
+1516740651188	geckodriver	INFO	Listening on 127.0.0.1:49720
+1516740652245	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.mryVrtVpb87H"
+1516740653161	Marionette	INFO	Enabled via --marionette
+1516741070461	geckodriver	INFO	geckodriver 0.19.1
+1516741070560	geckodriver	INFO	Listening on 127.0.0.1:49792
+1516741071671	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.H2CXLieh8JtA"
+1516741072497	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:57:53.671 plugin-container[67295:36370523] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741074167	Marionette	INFO	Listening on port 49803
+1516741074275	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741074346	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741074377	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741074635	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741074635	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741075239	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741075706	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741076038	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 67295, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1516741083526	geckodriver	INFO	geckodriver 0.19.1
+1516741083616	geckodriver	INFO	Listening on 127.0.0.1:49894
+1516741084679	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.92BZcDm8fOvA"
+1516741085304	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:58:06.386 plugin-container[67301:36371163] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741086844	Marionette	INFO	Listening on port 49905
+1516741086921	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741086996	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741087023	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741087308	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741087309	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741087943	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741088406	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741088749	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741096188	geckodriver	INFO	geckodriver 0.19.1
+1516741096268	geckodriver	INFO	Listening on 127.0.0.1:49991
+1516741097330	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.IuSzw8GYQ9GZ"
+1516741098110	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:58:19.229 plugin-container[67308:36371838] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7903, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741099676	Marionette	INFO	Listening on port 50002
+1516741099741	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741099818	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741099866	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741100099	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741100100	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741100677	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741101130	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741101484	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741108965	geckodriver	INFO	geckodriver 0.19.1
+1516741109042	geckodriver	INFO	Listening on 127.0.0.1:50091
+1516741110137	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.CSIp0JCKNkI7"
+1516741110911	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:58:32.251 plugin-container[67315:36372463] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8003, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741112766	Marionette	INFO	Listening on port 50102
+1516741112883	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741112975	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741113023	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741113258	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741113258	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741113848	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741114334	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741114731	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741122210	geckodriver	INFO	geckodriver 0.19.1
+1516741122295	geckodriver	INFO	Listening on 127.0.0.1:50199
+1516741123363	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.EHisT4UcgaoY"
+1516741124168	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:58:45.386 plugin-container[67320:36372832] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741125852	Marionette	INFO	Listening on port 50210
+1516741125917	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741126006	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741126067	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741126372	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741126373	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741126974	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741127453	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741127792	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741135277	geckodriver	INFO	geckodriver 0.19.1
+1516741135373	geckodriver	INFO	Listening on 127.0.0.1:50299
+1516741136425	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.kYlr8QvvUz78"
+1516741137101	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:58:58.279 plugin-container[67327:36373462] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x813f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741138827	Marionette	INFO	Listening on port 50310
+1516741138944	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741139034	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741139084	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741139347	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741139348	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741139930	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741140390	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741140719	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741148185	geckodriver	INFO	geckodriver 0.19.1
+1516741148275	geckodriver	INFO	Listening on 127.0.0.1:50400
+1516741149325	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.0cfPCgMR3B2H"
+1516741149959	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:59:11.133 plugin-container[67334:36374151] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7c43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741151637	Marionette	INFO	Listening on port 50411
+1516741151754	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741151841	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741151908	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741152379	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741152379	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741153130	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741153807	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741154141	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516741161665	geckodriver	INFO	geckodriver 0.19.1
+1516741161758	geckodriver	INFO	Listening on 127.0.0.1:50499
+1516741162802	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.lawFtrbquY2g"
+1516741163436	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:59:24.518 plugin-container[67339:36374749] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741165049	Marionette	INFO	Listening on port 50510
+1516741165141	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741165227	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741165292	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741165579	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741165579	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741166254	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741166843	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741167334	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741174858	geckodriver	INFO	geckodriver 0.19.1
+1516741174940	geckodriver	INFO	Listening on 127.0.0.1:50594
+1516741175997	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.AskHiA2nlb5X"
+1516741176654	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:59:37.769 plugin-container[67348:36375453] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741178275	Marionette	INFO	Listening on port 50605
+1516741178323	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741178406	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741178475	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741178749	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741178750	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741179360	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741179819	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741180169	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741187643	geckodriver	INFO	geckodriver 0.19.1
+1516741187724	geckodriver	INFO	Listening on 127.0.0.1:50691
+1516741188783	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.slw1TtFVwBY8"
+1516741189435	Marionette	INFO	Enabled via --marionette
+2018-01-23 12:59:50.527 plugin-container[67355:36376121] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741190985	Marionette	INFO	Listening on port 50702
+1516741191107	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741191181	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741191218	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741191421	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741191422	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741191974	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741192418	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741192753	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516741200273	geckodriver	INFO	geckodriver 0.19.1
+1516741200350	geckodriver	INFO	Listening on 127.0.0.1:50787
+1516741201414	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.uNBsOz5PTnHe"
+1516741202037	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:00:03.117 plugin-container[67362:36376749] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x813f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741203576	Marionette	INFO	Listening on port 50798
+1516741203652	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741203734	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741203773	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741203967	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741203967	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741204544	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741204989	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741205314	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741212787	geckodriver	INFO	geckodriver 0.19.1
+1516741212877	geckodriver	INFO	Listening on 127.0.0.1:50881
+1516741213926	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.2OS9B46t9aAW"
+1516741214548	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:00:15.660 plugin-container[67367:36377414] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8033, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741216100	Marionette	INFO	Listening on port 50892
+1516741216135	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741216209	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741216236	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741216553	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741216554	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741217179	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741217757	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741218129	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741225626	geckodriver	INFO	geckodriver 0.19.1
+1516741225716	geckodriver	INFO	Listening on 127.0.0.1:50975
+1516741226763	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.w9mFIXWWW0LH"
+1516741227390	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:00:28.526 plugin-container[67373:36378007] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x793f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741229031	Marionette	INFO	Listening on port 50986
+1516741229063	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741229153	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741229202	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741229394	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741229394	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741229974	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741230518	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741230874	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516741238385	geckodriver	INFO	geckodriver 0.19.1
+1516741238475	geckodriver	INFO	Listening on 127.0.0.1:51071
+1516741239533	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.PwLICRY8hGvw"
+1516741240147	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:00:41.230 plugin-container[67382:36378722] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7e3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741241673	Marionette	INFO	Listening on port 51083
+1516741241740	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741241825	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741241882	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741242115	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741242116	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741242699	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741243144	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741243518	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516741251026	geckodriver	INFO	geckodriver 0.19.1
+1516741251116	geckodriver	INFO	Listening on 127.0.0.1:51168
+1516741252210	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.5M4dG3Gt9ygK"
+1516741252907	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:00:54.238 plugin-container[67388:36379314] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7347, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741254723	Marionette	INFO	Listening on port 51179
+1516741254766	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741254864	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741254923	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741255185	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741255186	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741255839	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741256294	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741256651	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516741264204	geckodriver	INFO	geckodriver 0.19.1
+1516741264290	geckodriver	INFO	Listening on 127.0.0.1:51268
+1516741265358	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.SH7FHSFs6kpj"
+1516741266052	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:01:07.177 plugin-container[67394:36379955] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8307, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741267673	Marionette	INFO	Listening on port 51279
+1516741267781	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741267862	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741267904	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741268172	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741268173	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741268864	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741269435	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741269807	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741277342	geckodriver	INFO	geckodriver 0.19.1
+1516741277436	geckodriver	INFO	Listening on 127.0.0.1:51367
+1516741278511	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.MAS6a6uwgzlK"
+1516741279296	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:01:20.573 plugin-container[67401:36380630] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x763f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741281038	Marionette	INFO	Listening on port 51378
+1516741281151	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741281239	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741281282	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741281506	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741281507	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516741283210	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741283868	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741284220	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516741291736	geckodriver	INFO	geckodriver 0.19.1
+1516741291823	geckodriver	INFO	Listening on 127.0.0.1:51469
+1516741292877	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.pmUPhGcsTcJp"
+1516741293566	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:01:34.648 plugin-container[67408:36381277] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8303, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741295095	Marionette	INFO	Listening on port 51480
+1516741295200	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741295279	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741295308	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741295533	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741295534	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741296076	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741296537	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741296903	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 67408, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1516741304458	geckodriver	INFO	geckodriver 0.19.1
+1516741304556	geckodriver	INFO	Listening on 127.0.0.1:51566
+1516741305598	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.xOzK5UZa6tRu"
+1516741306262	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:01:47.338 plugin-container[67414:36381955] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7e3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741307811	Marionette	INFO	Listening on port 51577
+1516741307903	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741307981	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741308026	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741308278	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741308279	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741308832	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741309276	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741309621	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+1516741317117	geckodriver	INFO	geckodriver 0.19.1
+1516741317203	geckodriver	INFO	Listening on 127.0.0.1:51662
+1516741318284	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.Mc1TPXYQHvRx"
+1516741319061	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:02:00.229 plugin-container[67423:36382593] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x813f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516741320696	Marionette	INFO	Listening on port 51673
+1516741320807	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516741320885	Marionette	DEBUG	Register listener.js for window 2147483649
+1516741320928	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516741321116	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516741321117	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516741321663	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516741322201	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516741322534	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516742721605	geckodriver	INFO	geckodriver 0.19.1
+1516742721732	geckodriver	INFO	Listening on 127.0.0.1:51927
+1516742722851	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.Xc1lwztYH2NZ"
+1516742723749	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:25:25.126 plugin-container[67832:36401575] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742725971	Marionette	INFO	Listening on port 51938
+1516742726101	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742726172	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742726211	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742726584	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742726584	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742727178	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742727853	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742728228	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516742735695	geckodriver	INFO	geckodriver 0.19.1
+1516742735791	geckodriver	INFO	Listening on 127.0.0.1:52041
+1516742736910	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.M28d19mIuc9H"
+1516742737751	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:25:39.145 plugin-container[67841:36402219] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742739702	Marionette	INFO	Listening on port 52052
+1516742739797	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742739890	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742739963	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742740335	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742740336	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742740916	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516742741381	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742741748	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516742749253	geckodriver	INFO	geckodriver 0.19.1
+1516742749342	geckodriver	INFO	Listening on 127.0.0.1:52151
+1516742750442	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.SdFEHSTjj1qU"
+1516742751109	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:25:52.202 plugin-container[67847:36402936] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x773f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742752673	Marionette	INFO	Listening on port 52162
+1516742752785	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742752867	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742752898	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742753150	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742753150	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742753718	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516742754179	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742754517	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516742762232	geckodriver	INFO	geckodriver 0.19.1
+1516742762329	geckodriver	INFO	Listening on 127.0.0.1:52259
+1516742763463	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.GgOnGKKmjwi0"
+1516742764525	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:26:06.807 plugin-container[67854:36403578] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8243, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742768035	Marionette	INFO	Listening on port 52270
+1516742768132	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742768236	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742768316	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742768664	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742768665	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742769431	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742770066	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742770429	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516742778009	geckodriver	INFO	geckodriver 0.19.1
+1516742778097	geckodriver	INFO	Listening on 127.0.0.1:52403
+1516742779229	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.Ied2SfqDRz1V"
+1516742780193	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:26:21.852 plugin-container[67862:36403941] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742782393	Marionette	INFO	Listening on port 52414
+1516742782505	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742782590	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742782628	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742782866	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742782867	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742783595	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742784054	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742784421	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 67862, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1516742792028	geckodriver	INFO	geckodriver 0.19.1
+1516742792127	geckodriver	INFO	Listening on 127.0.0.1:52517
+1516742793197	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.OXIfgKHtFt3V"
+1516742794137	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:26:35.935 plugin-container[67868:36404554] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742796462	Marionette	INFO	Listening on port 52528
+1516742796499	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742796582	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742796628	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742796992	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742796992	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742797615	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516742798056	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742798405	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516742806005	geckodriver	INFO	geckodriver 0.19.1
+1516742806094	geckodriver	INFO	Listening on 127.0.0.1:52641
+1516742807163	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.usvzILJkQapN"
+1516742808053	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:26:49.292 plugin-container[67876:36405232] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7943, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742809923	Marionette	INFO	Listening on port 52652
+1516742810063	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742810148	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742810180	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742810469	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742810469	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742811100	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516742811568	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742811922	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516742819427	geckodriver	INFO	geckodriver 0.19.1
+1516742819523	geckodriver	INFO	Listening on 127.0.0.1:52752
+1516742820579	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.LorIfmnepZVj"
+1516742821280	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:27:02.539 plugin-container[67882:36405912] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742823087	Marionette	INFO	Listening on port 52763
+1516742823144	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742823224	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742823274	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742823459	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742823460	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742824048	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516742824520	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742824870	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 67882, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1516742832510	geckodriver	INFO	geckodriver 0.19.1
+1516742832796	geckodriver	INFO	Listening on 127.0.0.1:52856
+1516742833683	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.TpkmKguzxNQk"
+1516742834778	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:27:16.816 plugin-container[67891:36407263] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742837540	Marionette	INFO	Listening on port 52867
+1516742837678	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742837780	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742837918	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742838510	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742838510	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742839173	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742839647	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742840027	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516742847527	geckodriver	INFO	geckodriver 0.19.1
+1516742847606	geckodriver	INFO	Listening on 127.0.0.1:52989
+1516742848669	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.tkUcAvJUQ6iI"
+1516742849322	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:27:30.379 plugin-container[67899:36409121] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7e3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742850842	Marionette	INFO	Listening on port 53000
+1516742850878	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742850962	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742850997	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742851210	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742851210	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742851770	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516742852200	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742852566	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516742860091	geckodriver	INFO	geckodriver 0.19.1
+1516742860190	geckodriver	INFO	Listening on 127.0.0.1:53085
+1516742861247	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.9X88S0yFUlT5"
+1516742861967	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:27:43.192 plugin-container[67905:36409779] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742863684	Marionette	INFO	Listening on port 53096
+1516742863801	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742863899	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742863949	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742864230	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742864231	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516742864841	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742865256	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742865633	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516742873112	geckodriver	INFO	geckodriver 0.19.1
+1516742873217	geckodriver	INFO	Listening on 127.0.0.1:53188
+1516742874266	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.6BgAyHu3N6fV"
+1516742875025	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:27:56.213 plugin-container[67911:36410456] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742876809	Marionette	INFO	Listening on port 53199
+1516742876935	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742877010	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742877043	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742877240	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742877241	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742877882	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516742878356	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742878715	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516742886226	geckodriver	INFO	geckodriver 0.19.1
+1516742886325	geckodriver	INFO	Listening on 127.0.0.1:53292
+1516742887378	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.mD8piDK1SeFw"
+1516742888218	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:28:09.502 plugin-container[67918:36411072] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742890024	Marionette	INFO	Listening on port 53303
+1516742890136	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742890212	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742890241	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742890466	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742890467	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742891149	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516742891566	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742891934	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined
+1516742899435	geckodriver	INFO	geckodriver 0.19.1
+1516742899519	geckodriver	INFO	Listening on 127.0.0.1:53398
+1516742900568	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/lb/15s3bb4x03qb4k4lszrz80sw0000gn/T/rust_mozprofile.yllNb8aKwnmf"
+1516742901255	Marionette	INFO	Enabled via --marionette
+2018-01-23 13:28:22.436 plugin-container[67924:36411772] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8043, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1516742902913	Marionette	INFO	Listening on port 53409
+1516742903014	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516742903085	Marionette	DEBUG	Register listener.js for window 2147483649
+1516742903112	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516742903344	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516742903345	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-2168656-7, line 64: unreachable code after return statement
+1516742903919	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.whatismyelevation.com/##"
+1516742904319	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.whatismyelevation.com/##"
+1516742904684	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 237: TypeError: place.geometry is undefined
+JavaScript error: https://www.whatismyelevation.com/js/script.js, line 427: TypeError: map is undefined

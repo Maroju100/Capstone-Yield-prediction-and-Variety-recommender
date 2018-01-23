@@ -11,6 +11,7 @@ import time
 
 def get_alt(village, location):
     browser = webdriver.Firefox()
+    #driver = webdriver.PhantomJS()
     browser.get("https://www.whatismyelevation.com/##")
 
     browser.find_element_by_id("change-location").click()
@@ -19,7 +20,7 @@ def get_alt(village, location):
     search.send_keys('{}, {}'.format(village, location))
 
     search.send_keys(Keys.ENTER)
-
+    time.sleep(4)
     text = browser.page_source
     #coord = browser.current_url.split('@')[1].split(',')
     soup = BeautifulSoup(text, "lxml")
@@ -28,18 +29,28 @@ def get_alt(village, location):
     altitude = elevation.find('span', {'class': "value"})
 
     browser.quit()
+    #print (altitude.decode().split('>')[1].split('<')[0].replace(',', ''))
+    if len(altitude.decode().split('>')[1].split('<')[0].replace(',', '')) > 0:
+        alt = float(altitude.decode().split('>')[1].split('<')[0].replace(',', ''))
+    else:
+        alt = altitude.decode().split('>')[1].split('<')[0].replace(',', '')
 
-    return location, village, float(altitude.decode().split('>')[1].split('<')[0].replace(',', ''))
+    return location, village, alt
 
 if __name__ == '__main__':
     df = pd.read_csv('village_names.csv')
 
-    places = df[['Location', 'Village']].values
-    with open("altitude_data.csv", "w") as f:
-        wr = csv.writer(f)
-        #wr.writerow(['Location', 'Village', 'Latitude', 'Longitude'])
+    places = df['Location'].unique()
 
-        for place in places:
-            data = get_alt(place[1], place[0])
+    states = ['KARNATAKA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
+              'TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
+              'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
+
+    with open("location_altitude_data.csv", "w") as f:
+        wr = csv.writer(f)
+        wr.writerow(['State', 'Location', 'Altitude'])
+
+        for location, state in zip(places, states):
+            data = get_alt(location, state)
             wr.writerow(data)
             time.sleep(2)
