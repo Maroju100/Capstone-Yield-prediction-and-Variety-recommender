@@ -10,8 +10,13 @@ import selenium
 import time
 
 def get_alt(village, location):
-    browser = webdriver.Firefox()
-    #driver = webdriver.PhantomJS()
+    #executable_path = './phantomjs-2.1.1-linux-x86_64/bin/phantomjs'
+
+    #service_log_path = './log/ghostdriver.log'
+
+    browser = webdriver.PhantomJS()#(executable_path=executable_path, service_log_path=service_log_path)
+    #browser = webdriver.Firefox()
+
     browser.get("https://www.whatismyelevation.com/##")
 
     browser.find_element_by_id("change-location").click()
