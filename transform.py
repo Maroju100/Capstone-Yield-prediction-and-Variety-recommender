@@ -24,7 +24,7 @@ def merge_transform(df, rainfall_df, altitude_df):
                                             (x[str(x['Sow Month'])] + x[str(x['Sow Month'] + 1)])
                                             if x['Sow Month'] < 12 else
                                             x[str(x['Sow Month'])], axis=1)
-                                            
+
     final_df = pd.merge(rain_org_df, altitude_df, on=['Location'])
 
     return final_df
