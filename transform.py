@@ -4,6 +4,14 @@ from sklearn.cluster import KMeans
 
 def transform_orginal(df, location_df):
     '''
+    df (DataFrame): DataFrame containing the crop data. The different seasons,
+                    varieties, locations, size of farms along with the dry and
+                    gross yield.
+
+    location_df (DataFrame): DataFrame containing the latitude and longitude for
+                             the different villages present in MAHARASHTRA.
+
+    The function 
     Add the splitting of 'MAHARASHTRA' to four different regions.
     '''
 
@@ -22,7 +30,7 @@ def transform_orginal(df, location_df):
     full_cluster_list = [location_df.values[clusters == i] for i in range(5)]
 
     vil_names = [location_df[clusters == i]['Village'].values for i in range(5)]
-    
+
     for i in range(5):
         #df2.loc[df2['Village'].values in vil_names[i], 'Location'] = 'MAHARASHTRA'+ cluster_dict[i]
         df['Location'] = df['Village'].apply(lambda x:
