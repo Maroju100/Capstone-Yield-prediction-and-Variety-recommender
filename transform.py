@@ -19,6 +19,7 @@ def transform_orginal(df, location_df):
     df['YEAR'] = df['Sown \nDate'].apply(lambda x: x.year)
     df['Sow Month'] = df['Sown \nDate'].apply(lambda x: x.month)
     df['Sowing Week'] = df['Sowing Week'].apply(lambda x: x[-6])
+    df['Days Till Harvest'] = (df['Harvest Date'] - df['Sown \nDate']).dt.days
 
     cluster_dict = {0:'3', 1:'4', 2:'1', 3:'', 4:'2'}
 
@@ -80,6 +81,7 @@ def featurize(df, X_cols, y_col, dummy_cols):
     y = df[y_col]
 
 
+
     X = pd.get_dummies(X_initial, columns=dummy_cols)
 
     X['Sown \nDate'] = X['Sown \nDate'].apply(lambda x:
@@ -98,20 +100,20 @@ def featurize(df, X_cols, y_col, dummy_cols):
                                                     / 86400
                                                  )
                                               )
-
-    X['Harvest Date'] = X['Harvest Date'].apply(lambda x:
-                                                              int(
-                                                              time.mktime(
-                                                              x.timetuple())
-                                                              / 86400
-                                                              ) -
-                                                              int(
-                                                              time.mktime(
-                                                              datetime(
-                                                              x.timetuple()[0],
-                                                               1, 1))
-                                                               / 86400)
-                                                              )
+                                              
+    #X['Harvest Date'] = X['Harvest Date'].apply(lambda x:
+                                                              #int(
+                                                              #time.mktime(
+                                                              #x.timetuple())
+                                                              #/ 86400
+                                                              #) -
+                                                              #int(
+                                                              #time.mktime(
+                                                              #datetime(
+                                                              #x.timetuple()[0],
+                                                               #1, 1))
+                                                               #/ 86400)
+                                                              #)
 
     return X, y
 
