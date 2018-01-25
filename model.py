@@ -34,11 +34,13 @@ class MyModel():
         self.rf = RandomForestRegressor()
 
     def fit(self, X, y):
+
         self.lr.fit(X, y)
         self.gbr.fit(X, y)
         self.rf.fit(X, y)
 
     def predict(self, X):
+
         (self.predictions_lr, self.predictions_gbr, self.predictions_rf
         = self.lr.predict(X), self.gbr.predict(X), self.rf.predict(X))
 
@@ -46,4 +48,12 @@ class MyModel():
 
     def score(self, y):
 
-        return 
+        self.score_lr = mean_squared_error(self.predictions_lr, y)
+        self.score_gbr = mean_squared_error(self.predictions_gbr, y)
+        self.score_rf = mean_squared_error(self.predictions_rf, y)
+
+        return self.score_lr, self.score_gbr, self.score_rf
+
+    def cv(self, X, y, k):
+
+        pass
