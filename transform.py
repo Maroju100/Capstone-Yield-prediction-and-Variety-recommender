@@ -11,7 +11,7 @@ def transform_orginal(df, location_df):
     location_df (DataFrame): DataFrame containing the latitude and longitude for
                              the different villages present in MAHARASHTRA.
 
-    The function 
+    The function
     Add the splitting of 'MAHARASHTRA' to four different regions.
     '''
 
@@ -81,19 +81,21 @@ def featurize(df, X_cols, y_col, dummy_cols):
     X = pd.get_dummies(X_initial, columns=dummy_cols)
 
     X['Sown \nDate'] = X['Sown \nDate'].apply(lambda x:
-                                                            int(
-                                                            time.mktime(
-                                                            x.timetuple())
-                                                            / 86400
-                                                            ) -
-                                                            int(
-                                                            time.mktime(
-                                                            datetime(
-                                                            x.timetuple()[0],
-                                                            1, 1)
-                                                            )
-                                                            / 86400)
-                                                            )
+                                              int(
+                                                    time.mktime(
+                                                    x.timetuple())
+                                                    / 86400
+                                                 ) -
+
+                                              int(
+                                                    time.mktime(
+                                                    datetime(
+                                                    x.timetuple()[0],
+                                                    1, 1)
+                                                    )
+                                                    / 86400
+                                                 )
+                                              )
 
     X['Harvest Date'] = X['Harvest Date'].apply(lambda x:
                                                               int(
