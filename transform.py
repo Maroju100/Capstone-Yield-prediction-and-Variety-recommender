@@ -1,6 +1,15 @@
 import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+#from mpl_toolkits.basemap import Basemap
+from pandas.plotting import scatter_matrix
+from sklearn.metrics import mean_squared_error
+from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
+from sklearn.model_selection import train_test_split
+import time
+from datetime import datetime
+
 
 def transform_orginal(df, location_df):
     '''
@@ -69,10 +78,10 @@ def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
                                                 (x[str(x['Sow Month'])] + 7.05),
                                                  axis=1)
 
-    inter_df = pd.merge(rain_org_df, altitude_df, on=['Location'])
-    final_df = pd.merge(inter_df, lat_lon_df, on=['Location'])
+    inter_df = pd.merge(rain_org_df, altitude_df.drop(labels='State'), on=['Location'])
+    final_df = pd.merge(inter_df, lat_lon_df.drop(labels='State'), on=['Location'])
 
-    return final_df
+    return final_df.drop(labels=[str(i) for i in range(1, 13)])
 
 def featurize(df, X_cols, y_col, dummy_cols):
     '''
@@ -100,7 +109,7 @@ def featurize(df, X_cols, y_col, dummy_cols):
                                                     / 86400
                                                  )
                                               )
-                                              
+
     #X['Harvest Date'] = X['Harvest Date'].apply(lambda x:
                                                               #int(
                                                               #time.mktime(
@@ -114,8 +123,12 @@ def featurize(df, X_cols, y_col, dummy_cols):
                                                                #1, 1))
                                                                #/ 86400)
                                                               #)
+    X_train, X_test, y_train, y_test = train_test_split(X, y)
+    
+    return X_train, X_test, y_train, y_test
 
-    return X, y
+
+
 
 
 
