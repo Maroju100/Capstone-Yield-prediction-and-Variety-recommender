@@ -44,7 +44,7 @@ def transform_orginal(df, location_df):
 #AFTER transform_orginal(), THE DATAFRAME HAS COLUMNS YEAR AND SOW MONTH. THE DF
 #ALSO HAS 4 EXTRA LOCATIONS, NAMELY MAHARASHTRA1, MAHARASHTRA2...
 
-def merge_transform(df, rainfall_df, altitude_df):
+def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
     '''
     '''
 
@@ -68,7 +68,8 @@ def merge_transform(df, rainfall_df, altitude_df):
                                                 (x[str(x['Sow Month'])] + 7.05),
                                                  axis=1)
 
-    final_df = pd.merge(rain_org_df, altitude_df, on=['Location'])
+    inter_df = pd.merge(rain_org_df, altitude_df, on=['Location'])
+    final_df = pd.merge(inter_df, lat_lon_df, on=['Location'])
 
     return final_df
 
@@ -78,6 +79,7 @@ def featurize(df, X_cols, y_col, dummy_cols):
     X_initial = df[X_cols]
     y = df[y_col]
 
+
     X = pd.get_dummies(X_initial, columns=dummy_cols)
 
     X['Sown \nDate'] = X['Sown \nDate'].apply(lambda x:
@@ -85,8 +87,8 @@ def featurize(df, X_cols, y_col, dummy_cols):
                                                     time.mktime(
                                                     x.timetuple())
                                                     / 86400
-                                                 ) -
-
+                                                 )
+                                                 -
                                               int(
                                                     time.mktime(
                                                     datetime(
