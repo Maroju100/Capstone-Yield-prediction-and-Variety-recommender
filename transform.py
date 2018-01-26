@@ -78,20 +78,21 @@ def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
                                                 (x[str(x['Sow Month'])] + 7.05),
                                                  axis=1)
 
-    inter_df = pd.merge(rain_org_df, altitude_df.drop(labels='State'), on=['Location'])
-    final_df = pd.merge(inter_df, lat_lon_df.drop(labels='State'), on=['Location'])
+    inter_df = pd.merge(rain_org_df, altitude_df.drop(columns='State'), on=['Location'])
+    final_df = pd.merge(inter_df, lat_lon_df.drop(columns='State'), on=['Location'])
 
-    return final_df.drop(labels=[str(i) for i in range(1, 13)])
+    return final_df.drop(columns=[str(i) for i in range(1, 13)])
 
 def featurize(df, X_cols, y_col, dummy_cols):
     '''
     '''
     X_initial = df[X_cols]
     y = df[y_col]
+    ss = StandardScaler()
+    ss.fit(X_initial)
+    X_scaled = ss.transform(X_initial)
 
-
-
-    X = pd.get_dummies(X_initial, columns=dummy_cols)
+    X = pd.get_dummies(X_scaled, columns=dummy_cols)
 
     X['Sown \nDate'] = X['Sown \nDate'].apply(lambda x:
                                               int(
@@ -104,7 +105,7 @@ def featurize(df, X_cols, y_col, dummy_cols):
                                                     time.mktime(
                                                     datetime(
                                                     x.timetuple()[0],
-                                                    1, 1)
+                                                    1, 1).timetuple()
                                                     )
                                                     / 86400
                                                  )
@@ -124,7 +125,7 @@ def featurize(df, X_cols, y_col, dummy_cols):
                                                                #/ 86400)
                                                               #)
     X_train, X_test, y_train, y_test = train_test_split(X, y)
-    
+
     return X_train, X_test, y_train, y_test
 
 
