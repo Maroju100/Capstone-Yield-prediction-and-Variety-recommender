@@ -62,6 +62,19 @@ if __name__ == '__main__':
     options.add_argument('-headless')
     browser = Firefox(executable_path='geckodriver', firefox_options=options)
 
+    with BytesIO() as f:
+        wr = csv.writer(f)
+        wr.writerow(['State', 'Location', 'Altitude'])
+
+        for location, state in zip(places, states):
+            data = get_alt(location, state, browser)
+            wr.writerow(data)
+            time.sleep(2)
+
+        s3.put_object(Bucket='', Key='location_altitude_data.csv',
+                      Body=f.read())
+
+
     with open("location_altitude_data.csv", "w") as f:
         wr = csv.writer(f)
         wr.writerow(['State', 'Location', 'Altitude'])

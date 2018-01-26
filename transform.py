@@ -90,7 +90,7 @@ def featurize(df, X_cols, y_col, dummy_cols):
     y = df[y_col]
     ss = StandardScaler()
     ss.fit(X_initial)
-    X_scaled = ss.transform(X_initial)
+    X_scaled = pd.DataFrame(ss.transform(X_initial), columns=X_cols)
 
     X = pd.get_dummies(X_scaled, columns=dummy_cols)
 
