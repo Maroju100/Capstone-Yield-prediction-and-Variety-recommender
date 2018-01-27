@@ -70,8 +70,7 @@ if __name__ == '__main__':
             data = get_alt(location, state, browser)
             wr.writerow(data)
             time.sleep(2)
-
-        s3.put_object(Bucket='', Key='location_altitude_data.csv',
+            s3.put_object(Bucket='', Key='location_altitude_data.csv',
                       Body=f.read())
 
 
