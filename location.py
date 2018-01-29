@@ -21,23 +21,28 @@ def get_loc(village, location, browser, state_dict):
 
 
     #browser.get("https://www.google.com/maps")
-    browser.get("https://www.latlong.net/")
+    try:
 
-    search = browser.find_element_by_class_name("width70")
-    #search = browser.find_element_by_id("tc1709").click()
-    search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
+        browser.get("https://www.latlong.net/")
 
-    search.send_keys(Keys.ENTER)
-    time.sleep(3)
-    text = browser.page_source
-    #coord = browser.current_url.split('@')[1].split(',')
-    soup = BeautifulSoup(text, "lxml")
-    coord = soup.find('span',
-                     {'class': 'coordinatetxt',
-                      'id': 'latlngspan'}
-                                          ).get_text().strip("()").split(',')
+        search = browser.find_element_by_class_name("width70")
+        #search = browser.find_element_by_id("tc1709").click()
+        search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
 
-    return location, village, float(coord[0]), float(coord[1])
+        search.send_keys(Keys.ENTER)
+        time.sleep(3)
+        text = browser.page_source
+        #coord = browser.current_url.split('@')[1].split(',')
+        soup = BeautifulSoup(text, "lxml")
+        coord = soup.find('span',
+                         {'class': 'coordinatetxt',
+                          'id': 'latlngspan'}
+                                              ).get_text().strip("()").split(',')
+
+        return location, village, float(coord[0]), float(coord[1])
+
+    except:
+        return location, village, '', ''
 
 if __name__ == '__main__':
     #df = pd.read_csv('village_names.csv')

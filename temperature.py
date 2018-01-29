@@ -35,11 +35,32 @@ def get_temp(village, location, browser, state_dict):
     time.sleep(2)
     browser.find_element_by_css_selector("a.contentTabActive.brTop5").click()
 
-    data = []
-    while '2015' not in browser.current_url.split('?')[0]:
-        soup = BeautifulSoup(browser.page_source, 'lxml')
-        temp = soup.find_all('span', {'class': 'wx-value'})
-        row = [village, float(temp[0].get_text()), float(temp[-1].get_text())]
+    data_max = []
+    data_min = []
+    year = int(soup.find('h2', {'class': 'history-date'}).get_text()[-4:])
 
-        data.append(row)
-        browser.find_element_by_class_name("next-link").click()
+    data_max.append(['YEAR','Village','1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'])
+    data_min.append(['YEAR','Village','1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'])
+
+    while '2016' not in browser.current_url.split('?')[0]:
+        row_max = []
+        row_min = []
+
+        soup = BeautifulSoup(browser.page_source, 'lxml')
+        
+        row_max.append(int(soup.find('h2', {'class': 'history-date'}).get_text()[-4:]))
+        row_max.append('Ballari')
+
+        row_min.append(int(soup.find('h2', {'class': 'history-date'}).get_text()[-4:]))
+        row_min.append('Ballari')
+
+        for i in range(12):
+            row_max.append(float(temp[0].get_text()))
+            row_min.append(float(temp[-1].get_text()))
+            browser.find_element_by_class_name("next-link").click()
+            time.sleep(2)
+        #row = ['Ballari', float(temp[0].get_text()), float(temp[-1].get_text())]
+        data_max.append(row_max)
+        data_min.append(row_min)
+
+    return data
