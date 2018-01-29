@@ -20,17 +20,22 @@ from selenium.webdriver.support.wait import WebDriverWait
 def get_loc(village, location, browser, state_dict):
 
 
-    browser.get("https://www.google.com/maps")
+    #browser.get("https://www.google.com/maps")
+    browser.get("https://www.latlong.net/")
 
-
-    search = browser.find_element_by_id("searchboxinput")
+    search = browser.find_element_by_class_name("width70")
+    #search = browser.find_element_by_id("tc1709").click()
     search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
 
     search.send_keys(Keys.ENTER)
     time.sleep(3)
     text = browser.page_source
-    coord = browser.current_url.split('@')[1].split(',')
-    #soup = BeautifulSoup(text, "lxml")
+    #coord = browser.current_url.split('@')[1].split(',')
+    soup = BeautifulSoup(text, "lxml")
+    coord = soup.find('span',
+                     {'class': 'coordinatetxt',
+                      'id': 'latlngspan'}
+                                          ).get_text().strip("()").split(',')
 
     return location, village, float(coord[0]), float(coord[1])
 
@@ -49,7 +54,7 @@ if __name__ == '__main__':
                 'MAHARASHTRA4': 'DAHEGAON' }
 
 
-
+    start = time.time()
     df = pd.read_csv('village_names.csv')
     #places = df['Location'].unique()
     df.drop(columns='Unnamed: 0', inplace=True)
@@ -79,9 +84,10 @@ if __name__ == '__main__':
             wr.writerow(data)
             time.sleep(4)
 
-            s3.put_object(Bucket='capstone-web-scrape', Key='village_location_data.csv',
-                      Body=f.getvalue())
-
+            s3.put_object(Bucket='capstone-web-scrape',
+                          Key='latlong_village_location_data.csv',
+                          Body=f.getvalue())
+    print (time.time() - start)
 '''    with open("location_coord_data.csv", "w") as f:
         wr = csv.writer(f)
         wr.writerow(['State', 'Location', 'Latitude', 'Longitude'])
