@@ -6,24 +6,32 @@ import numpy as np
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
+from io import BytesIO, StringIO
+import boto3
 import selenium
 import time
+from selenium.webdriver import Firefox
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.support import expected_conditions as expected
+from selenium.webdriver.support.wait import WebDriverWait
 
-def get_loc(village, location):
+def get_loc(village, location, browser, state_dict):
 
-    browser = webdriver.Firefox()
+
     browser.get("https://www.google.com/maps")
 
 
     search = browser.find_element_by_id("searchboxinput")
-    search.send_keys('{}, {}'.format(village, location))
+    search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
 
     search.send_keys(Keys.ENTER)
     time.sleep(3)
     text = browser.page_source
     coord = browser.current_url.split('@')[1].split(',')
     #soup = BeautifulSoup(text, "lxml")
-    browser.quit()
+
     return location, village, float(coord[0]), float(coord[1])
 
 if __name__ == '__main__':
@@ -42,10 +50,39 @@ if __name__ == '__main__':
 
 
 
-    df = pd.read_csv('location_village_names.csv')
-    places = df['Location'].unique()
+    df = pd.read_csv('village_names.csv')
+    #places = df['Location'].unique()
+    df.drop(columns='Unnamed: 0', inplace=True)
+    location_groups = df.groupby(by='Location')
+    village_dict = {}
 
-    with open("location_coord_data.csv", "w") as f:
+    for loc, group in location_groups:
+        for vill in set(group['Village'].values):
+            village_dict[vill] = loc
+
+    states = ['KARNATAKA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
+              'TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
+              'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
+    state_dict = dict(zip(df['Location'].unique(), states))
+
+    options = Options()
+    options.add_argument('-headless')
+    browser = Firefox(executable_path='geckodriver', firefox_options=options)
+    s3 = boto3.client('s3')
+
+    with StringIO() as f:
+        wr = csv.writer(f)
+        wr.writerow(['Location', 'Village', 'Latitude', 'Longitude'])
+
+        for village, location in village_dict.items():
+            data = get_loc(village, location, browser, state_dict)
+            wr.writerow(data)
+            time.sleep(4)
+
+            s3.put_object(Bucket='capstone-web-scrape', Key='village_location_data.csv',
+                      Body=f.getvalue())
+
+'''    with open("location_coord_data.csv", "w") as f:
         wr = csv.writer(f)
         wr.writerow(['State', 'Location', 'Latitude', 'Longitude'])
 
@@ -57,4 +94,4 @@ if __name__ == '__main__':
                 data = get_loc(place, state)
 
             wr.writerow(data)
-            time.sleep(3)
+            time.sleep(3)'''

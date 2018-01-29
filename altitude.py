@@ -6,6 +6,8 @@ import numpy as np
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
+from io import BytesIO, StringIO
+import boto3
 import selenium
 import time
 from selenium.webdriver import Firefox
@@ -16,7 +18,7 @@ from selenium.webdriver.support import expected_conditions as expected
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-def get_alt(village, location, browser):
+def get_alt(village, location, browser, state_dict):
     #executable_path = './phantomjs-2.1.1-linux-x86_64/bin/phantomjs'
 
     #service_log_path = './log/ghostdriver.log'
@@ -29,7 +31,7 @@ def get_alt(village, location, browser):
     browser.find_element_by_id("change-location").click()
     time.sleep(2)
     search = browser.find_element_by_id("address")
-    search.send_keys('{}, {}'.format(village, location))
+    search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
 
     search.send_keys(Keys.ENTER)
     time.sleep(3)
@@ -52,33 +54,42 @@ def get_alt(village, location, browser):
 if __name__ == '__main__':
     df = pd.read_csv('village_names.csv')
 
-    places = df['Location'].unique()
+    df.drop(columns='Unnamed: 0', inplace=True)
+    location_groups = df.groupby(by='Location')
+    village_dict = {}
+
+    for loc, group in location_groups:
+        for vill in set(group['Village'].values):
+            village_dict[vill] = loc
 
     states = ['KARNATAKA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
               'TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
               'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
+    state_dict = dict(zip(df['Location'].unique(), states))
 
     options = Options()
     options.add_argument('-headless')
     browser = Firefox(executable_path='geckodriver', firefox_options=options)
+    s3 = boto3.client('s3')
 
-    with BytesIO() as f:
+    with StringIO() as f:
+        wr = csv.writer(f)
+        wr.writerow(['Location', 'Village', 'Altitude'])
+
+        for village, location in village_dict.items():
+            data = get_alt(village, location, browser, state_dict)
+            wr.writerow(data)
+            time.sleep(2)
+
+            s3.put_object(Bucket='capstone-web-scrape', Key='village_altitude_data.csv',
+                      Body=f.getvalue())
+
+
+'''    with open("village_altitude_data.csv", "w") as f:
         wr = csv.writer(f)
         wr.writerow(['State', 'Location', 'Altitude'])
 
         for location, state in zip(places, states):
             data = get_alt(location, state, browser)
             wr.writerow(data)
-            time.sleep(2)
-            s3.put_object(Bucket='', Key='location_altitude_data.csv',
-                      Body=f.read())
-
-
-    with open("location_altitude_data.csv", "w") as f:
-        wr = csv.writer(f)
-        wr.writerow(['State', 'Location', 'Altitude'])
-
-        for location, state in zip(places, states):
-            data = get_alt(location, state, browser)
-            wr.writerow(data)
-            time.sleep(2)
+            time.sleep(2)'''
