@@ -30,10 +30,13 @@ def transform_orginal(df, location_df):
     df['Sow Month'] = df['Sown \nDate'].apply(lambda x: x.month)
     df['Sowing Week'] = df['Sowing Week'].apply(lambda x: x[-6])
     df['Days Till Harvest'] = (df['Harvest Date'] - df['Sown \nDate']).dt.days
-    df['Sowing Week of Year'] = merged[['Sowing Week', 'Sow Month']].apply
-                                (lambda x: int(x['Sowing Week']) +
-                                          (int(x['Sow Month']) * 4), axis=1)
-                                          
+    df['Sowing Week of Year'] = df[['Sowing Week', 'Sow Month']].apply(
+                                        lambda x: int(x['Sowing Week']) +
+                                        (int(x['Sow Month']) * 4), axis=1)
+
+    df['Dry Yield Per Acre'] = (df['Dried Yield (Metric Tons)'] /
+                                df['Standing Area \n(Acres)'] )
+
     df['Sown \nDate'] = df['Sown \nDate'].apply(lambda x:
                                               int(
                                                     time.mktime(

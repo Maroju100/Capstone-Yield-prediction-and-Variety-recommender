@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     with StringIO() as f:
         wr = csv.writer(f)
-        wr.writerow(['Location', 'Village', 'Altitude'])
+        wr.writerow(['Location', 'Village', 'Elevation'])
 
         for village, location in village_dict.items():
             data = get_alt(village, location, browser, state_dict)
