@@ -26,7 +26,7 @@ def get_loc(village, location, browser, state_dict):
     #browser.get("https://www.latlong.net/")
     browser.get("https://www.findlatitudeandlongitude.com/")
     time.sleep(2)
-    search = browser.find_element_by_name("address")
+    search = browser.find_element_by_xpath("//input[@name='address']")
     #search = browser.find_element_by_id("tc1709").click()
     #search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
     search.send_keys('{}, {}'.format(village, state_dict[location]))
@@ -38,14 +38,20 @@ def get_loc(village, location, browser, state_dict):
     #coord = browser.current_url.split('@')[1].split(',')
     soup = BeautifulSoup(browser.page_source.encode('utf-8').strip(),
                                                 'html.parser')
+    try:
+        coord_lat = soup.find('span', {'id': 'lat_dec'}).find('span',
+                                        {'class': 'value'}).get_text()[:6]
+        coord_lon = soup.find('span', {'id': 'lon_dec'}).find('span',
+                                        {'class': 'value'}).get_text()[:6]
 
-    coord_lat = soup.find('span', {'id': 'lat_dec'}).find('span',
-                                    {'class': 'value'}).get_text()[:8]
-    coord_lon = soup.find('span', {'id': 'lon_dec'}).find('span',
-                                    {'class': 'value'}).get_text()[:8]
+        return location, village, float(coord_lat), float(coord_lon)
+    except:
 
-    return location, village, float(coord_lat), float(coord_lon)
-
+        coord_lat = soup.find('span', {'id': 'lat_dec'}).find('span',
+                                        {'class': 'value'}).get_text()[:4]
+        coord_lon = soup.find('span', {'id': 'lon_dec'}).find('span',
+                                        {'class': 'value'}).get_text()[:4]
+        return location, village, float(coord_lat), float(coord_lon)
     #except:
         #return location, village, '', ''
 
@@ -90,12 +96,14 @@ if __name__ == '__main__':
         for village, location in village_dict.items():
             data = get_loc(village, location, browser, state_dict)
             wr.writerow(data)
-            time.sleep(4)
+
 
             s3.put_object(Bucket='capstone-web-scrape',
                           Key='duplicates_village_location_data.csv',
                           Body=f.getvalue())
+            time.sleep(4)
     print (time.time() - start)
+
 '''    with open("location_coord_data.csv", "w") as f:
         wr = csv.writer(f)
         wr.writerow(['State', 'Location', 'Latitude', 'Longitude'])
