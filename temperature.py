@@ -16,14 +16,20 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as expected
 from selenium.webdriver.support.wait import WebDriverWait
 import multiprocessing as mp
+import re
 
 def get_temp(village, location, browser, state_dict):
 
-    driver.maximize_window()
+    browser.maximize_window()
     browser.get("https://www.wunderground.com/history/")
 
     search = browser.find_element_by_id("histSearch")
-    search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
+    #search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
+
+    if 'MAHARASHTRA' in village:
+        search.send_keys('{}, {}'.format(state_dict[village], village))
+    else:
+        search.send_keys('{}, {}'.format(village, location))
 
     select = Select(browser.find_element_by_class_name("day"))
     select.select_by_visible_text('14')
@@ -39,6 +45,7 @@ def get_temp(village, location, browser, state_dict):
     #browser.find_element_by_css_selector("a.contentTabActive.brTop5").click()
     soup = BeautifulSoup(browser.page_source.encode('utf-8').strip(),
                                                     'html.parser')
+    #soup = BeautifulSoup(re.sub("<!--|-->","", browser.page_source), "lxml")
 
     data_max = []
     data_min = []
@@ -64,7 +71,10 @@ def get_temp(village, location, browser, state_dict):
 
         for i in range(12):
 
-            soup = BeautifulSoup(browser.page_source, 'lxml')
+            soup = BeautifulSoup(browser.page_source.encode('utf-8').strip(),
+                                                            'html.parser')
+            #soup = BeautifulSoup(re.sub("<!--|-->","", browser.page_source),
+                                        #"lxml")
             temp = soup.find_all('span', {'class': 'wx-value'})
             row_max.append(float(temp[0].get_text()))
 
@@ -115,7 +125,7 @@ if __name__ == '__main__':
 
     start = time.time()
 
-    df = pd.read_csv('village_names.csv')
+    df = pd.read_csv('transform_loc_vill.csv')
     #places = df['Location'].unique()
     df.drop(columns='Unnamed: 0', inplace=True)
     location_groups = df.groupby(by='Location')
@@ -125,25 +135,34 @@ if __name__ == '__main__':
         for vill in set(group['Village'].values):
             village_dict[vill] = loc
 
-    states = ['KARNATAKA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA',
-              'ANDHRA PRADESH', 'ANDHRA PRADESH','TAMILNADU', 'TELANGANA',
-              'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
-              'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
+    #states = ['KARNATAKA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA',
+              #'ANDHRA PRADESH', 'ANDHRA PRADESH','TAMILNADU', 'TELANGANA',
+              #'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
+              #'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
 
-    state_dict = dict(zip(df['Location'].unique(), states))
+    states = ['KARNATAKA','ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA',
+              'MAHARASHTRA','MAHARASHTRA', 'MAHARASHTRA', 'ANDHRA PRADESH',
+              'ANDHRA PRADESH','TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH',
+              'ANDHRA PRADESH', 'TELANGANA', 'TELANGANA','ANDHRA PRADESH']
 
-    options = Options()
-    options.add_argument('-headless')
-    browser1 = Firefox(executable_path='geckodriver', firefox_options=options)
-    browser2 = Firefox(executable_path='geckodriver', firefox_options=options)
+    state_dict2 = dict(zip(df['Location'].unique(), states))
+
+    #options = Options()
+    #options.add_argument('-headless')
+    #browser1 = Firefox(executable_path='geckodriver', firefox_options=options)
+    #browser2 = Firefox(executable_path='geckodriver', firefox_options=options)
+
+    browser1 = Firefox()
+    browser2 = Firefox()
+
     s3 = boto3.client('s3')
 
     processes = [mp.Process(target=write_temp,
-                            args=(village_dict, browser1,
-                                  state_dict, s3, 'max')),
+                            args=(state_dict2, browser1,
+                                  loc_dict, s3, 'max')),
                  mp.Process(target=write_temp,
-                            args=(village_dict, browser2,
-                                  state_dict, s3, 'min'))]
+                            args=(state_dict2, browser2,
+                                  loc_dict, s3, 'min'))]
     for p in processes:
         p.start()
 

@@ -21,36 +21,40 @@ def get_loc(village, location, browser, state_dict):
 
 
     #browser.get("https://www.google.com/maps")
-    try:
+    #try:
 
-        browser.get("https://www.latlong.net/")
+    #browser.get("https://www.latlong.net/")
+    browser.get("https://www.findlatitudeandlongitude.com/")
+    search = browser.find_element_by_name("address")
+    #search = browser.find_element_by_id("tc1709").click()
+    #search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
+    search.send_keys('{}, {}'.format(village, state_dict[location]))
+    #search.send_keys(Keys.ENTER)
+    time.sleep(2)
+    #text = browser.page_source
+    browser.find_element_by_css_selector('input#load_address_button').click()
+    time.sleep(2)
+    #coord = browser.current_url.split('@')[1].split(',')
+    soup = BeautifulSoup(browser.page_source.encode('utf-8').strip(),
+                                                'html.parser')
+    coord_lat = soup.find('span',
+                     {'class': 'value',
+                      'id': 'lat_dec'}
+                                          ).get_text()[:8]
+    coord_lon = soup.find('span',
+                     {'class': 'value',
+                      'id': 'lon_dec'}
+                                          ).get_text()[:8]
 
-        search = browser.find_element_by_class_name("width70")
-        #search = browser.find_element_by_id("tc1709").click()
-        search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
+    return location, village, float(coord_lat), float(coord_lon)
 
-        search.send_keys(Keys.ENTER)
-        time.sleep(3)
-        text = browser.page_source
-        #coord = browser.current_url.split('@')[1].split(',')
-        soup = BeautifulSoup(text, "lxml")
-        coord = soup.find('span',
-                         {'class': 'coordinatetxt',
-                          'id': 'latlngspan'}
-                                              ).get_text().strip("()").split(',')
-
-        return location, village, float(coord[0]), float(coord[1])
-
-    except:
-        return location, village, '', ''
+    #except:
+        #return location, village, '', ''
 
 if __name__ == '__main__':
     #df = pd.read_csv('village_names.csv')
     #places = df[df['Location'] == 'MAHARASHTRA']['Village'].unique()
-    states = ['KARNATAKA','ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA', 'MAHARASHTRA',
-              'MAHARASHTRA', 'MAHARASHTRA', 'MAHARASHTRA', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
-              'TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
-              'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
+
 
 
 
@@ -60,7 +64,7 @@ if __name__ == '__main__':
 
 
     start = time.time()
-    df = pd.read_csv('village_names.csv')
+    df = pd.read_csv('village_location_duplicates.csv')
     #places = df['Location'].unique()
     df.drop(columns='Unnamed: 0', inplace=True)
     location_groups = df.groupby(by='Location')
@@ -70,9 +74,10 @@ if __name__ == '__main__':
         for vill in set(group['Village'].values):
             village_dict[vill] = loc
 
-    states = ['KARNATAKA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
-              'TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
-              'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
+    states = ['KARNATAKA', 'TAMILNADU', 'KADAPA, ANDHRA PRADESH', 'KADAPA, ANDHRA PRADESH',
+              'W GODAVARI, ANDHRA PRADESH', 'KHAMMAM, TELANGANA','TELANGANA', 'ANDHRA PRADESH',
+              'MAHARASHTRA', 'PRAKASAM, ANDHRA PRADESH', 'KADAPA, ANDHRA PRADESH','E GODAVARI, ANDHRA PRADESH',
+              'TELANGANA']
     state_dict = dict(zip(df['Location'].unique(), states))
 
     options = Options()
@@ -90,7 +95,7 @@ if __name__ == '__main__':
             time.sleep(4)
 
             s3.put_object(Bucket='capstone-web-scrape',
-                          Key='latlong_village_location_data.csv',
+                          Key='duplicates_village_location_data.csv',
                           Body=f.getvalue())
     print (time.time() - start)
 '''    with open("location_coord_data.csv", "w") as f:
