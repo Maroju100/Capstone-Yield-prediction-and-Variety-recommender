@@ -53,7 +53,7 @@ def get_temp(village, location, browser, state_dict):
                                 {'class': 'year form-select'}).find('option',
                                 {'selected': "selected"}).get_text())
 
-    while '2018' not in browser.current_url.split('?')[0]:
+    while '2017' not in browser.current_url.split('?')[0]:
         row_max = []
         row_min = []
 

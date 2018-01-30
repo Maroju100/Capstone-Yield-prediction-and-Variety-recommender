@@ -25,6 +25,7 @@ def get_loc(village, location, browser, state_dict):
 
     #browser.get("https://www.latlong.net/")
     browser.get("https://www.findlatitudeandlongitude.com/")
+    time.sleep(2)
     search = browser.find_element_by_name("address")
     #search = browser.find_element_by_id("tc1709").click()
     #search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
@@ -37,14 +38,11 @@ def get_loc(village, location, browser, state_dict):
     #coord = browser.current_url.split('@')[1].split(',')
     soup = BeautifulSoup(browser.page_source.encode('utf-8').strip(),
                                                 'html.parser')
-    coord_lat = soup.find('span',
-                     {'class': 'value',
-                      'id': 'lat_dec'}
-                                          ).get_text()[:8]
-    coord_lon = soup.find('span',
-                     {'class': 'value',
-                      'id': 'lon_dec'}
-                                          ).get_text()[:8]
+
+    coord_lat = soup.find('span', {'id': 'lat_dec'}).find('span',
+                                    {'class': 'value'}).get_text()[:8]
+    coord_lon = soup.find('span', {'id': 'lon_dec'}).find('span',
+                                    {'class': 'value'}).get_text()[:8]
 
     return location, village, float(coord_lat), float(coord_lon)
 
