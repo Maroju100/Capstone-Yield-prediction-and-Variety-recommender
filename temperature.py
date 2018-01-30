@@ -19,6 +19,7 @@ import multiprocessing as mp
 
 def get_temp(village, location, browser, state_dict):
 
+    driver.maximize_window()
     browser.get("https://www.wunderground.com/history/")
 
     search = browser.find_element_by_id("histSearch")
@@ -36,11 +37,14 @@ def get_temp(village, location, browser, state_dict):
     browser.get(browser.current_url.replace('Daily', 'Monthly'))
     time.sleep(2)
     #browser.find_element_by_css_selector("a.contentTabActive.brTop5").click()
-    soup = BeautifulSoup(browser.page_source, 'lxml')
+    soup = BeautifulSoup(browser.page_source.encode('utf-8').strip(),
+                                                    'html.parser')
 
     data_max = []
     data_min = []
-    year = int(soup.find('h2', {'class': 'history-date'}).get_text()[-4:])
+    year = int(soup.find('select',
+                                {'class': 'year form-select'}).find('option',
+                                {'selected': "selected"}).get_text())
 
     while '2018' not in browser.current_url.split('?')[0]:
         row_max = []
@@ -48,19 +52,27 @@ def get_temp(village, location, browser, state_dict):
 
 
 
-        row_max.append(int(soup.find('h2',
-                                    {'class': 'history-date'}).get_text()[-4:]))
+        row_max.append(int(soup.find('select',
+                                    {'class': 'year form-select'}).find('option',
+                                    {'selected': "selected"}).get_text()))
         row_max.append(village)
 
-        row_min.append(int(soup.find('h2',
-                                    {'class': 'history-date'}).get_text()[-4:]))
+        row_min.append(int(soup.find('select',
+                                    {'class': 'year form-select'}).find('option',
+                                    {'selected': "selected"}).get_text()))
         row_min.append(village)
 
         for i in range(12):
 
             soup = BeautifulSoup(browser.page_source, 'lxml')
+            temp = soup.find_all('span', {'class': 'wx-value'})
             row_max.append(float(temp[0].get_text()))
-            row_min.append(float(temp[5].get_text()))
+
+            if len(temp) > 5:
+                row_min.append(float(temp[5].get_text()))
+            else:
+                row_min.append(0)
+
             browser.find_element_by_class_name("next-link").click()
             time.sleep(2)
 
@@ -73,8 +85,6 @@ def write_temp(village_dict, browser, state_dict, s3, kind='max'):
 
     with StringIO() as f:
         wr = csv.writer(f)
-        data_max.append(['YEAR','Village','1', '2', '3', '4', '5',
-                         '6', '7', '8', '9', '10', '11', '12'])
 
         wr.writerow(['YEAR','Village','1', '2', '3', '4', '5',
                          '6', '7', '8', '9', '10', '11', '12'])
@@ -130,12 +140,14 @@ if __name__ == '__main__':
 
     processes = [mp.Process(target=write_temp,
                             args=(village_dict, browser1,
-                                  state_dict, s3, kind='max')),
+                                  state_dict, s3, 'max')),
                  mp.Process(target=write_temp,
                             args=(village_dict, browser2,
-                                  state_dict, s3, kind='min'))]
+                                  state_dict, s3, 'min'))]
     for p in processes:
         p.start()
 
+    for p in processes:
+        p.join()
 
     print (time.time() - start)
