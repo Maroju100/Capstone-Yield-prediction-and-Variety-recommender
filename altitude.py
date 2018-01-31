@@ -71,10 +71,10 @@ if __name__ == '__main__':
 
     state_dict = dict(zip(df['Location'].unique(), states))
 
-    #options = Options()
-    #options.add_argument('-headless')
-    #browser = Firefox(executable_path='geckodriver', firefox_options=options)
-    browser = Firefox()
+    options = Options()
+    options.add_argument('-headless')
+    browser = Firefox(executable_path='geckodriver', firefox_options=options)
+    #browser = Firefox()
     s3 = boto3.client('s3')
 
     with StringIO() as f:

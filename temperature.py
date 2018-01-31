@@ -18,7 +18,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 import multiprocessing as mp
 import re
 
-def get_temp(village, location, browser, state_dict):
+def get_temp(village, location, browser, state_dict, count=0):
 
 
     #try:
@@ -54,25 +54,36 @@ def get_temp(village, location, browser, state_dict):
 
     data_max = []
     data_min = []
-    year = int(soup.find('select',
-                                {'class': 'year form-select'}).find('option',
-                                {'selected': "selected"}).get_text())
+    try:
+        year = int(soup.find('select',
+                                    {'class': 'year form-select'}).find('option',
+                                    {'selected': "selected"}).get_text())
+    except:
+        year = 0.0
 
     while '2017' not in browser.current_url.split('?')[0]:
         row_max = []
         row_min = []
 
+        try:
+            row_max.append(int(soup.find('select',
+                                        {'class': 'year form-select'}).find('option',
+                                        {'selected': "selected"}).get_text()))
 
+            row_min.append(int(soup.find('select',
+                                        {'class': 'year form-select'}).find('option',
+                                        {'selected': "selected"}).get_text()))
+        except:
+            row_max.append(0)
 
-        row_max.append(int(soup.find('select',
-                                    {'class': 'year form-select'}).find('option',
-                                    {'selected': "selected"}).get_text()))
-        row_max.append(state_dict[village])
+            row_min.append(0)
 
-        row_min.append(int(soup.find('select',
-                                    {'class': 'year form-select'}).find('option',
-                                    {'selected': "selected"}).get_text()))
-        row_min.append(state_dict[village])
+        if count:
+            row_max.append(state_dict[village][count])
+            row_min.append(state_dict[village][count])
+        else:
+            row_max.append(state_dict[village])
+            row_min.append(state_dict[village])
 
         for i in range(12):
 
@@ -85,14 +96,21 @@ def get_temp(village, location, browser, state_dict):
             #soup = BeautifulSoup(re.sub("<!--|-->","", browser.page_source),
                                         #"lxml")
             temp = soup.find_all('span', {'class': 'wx-value'})
-            row_max.append(float(temp[0].get_text()))
+            try:
+                row_max.append(float(temp[0].get_text()))
+            except:
+                row_max.append(0)
 
             if len(temp) > 5:
                 row_min.append(float(temp[5].get_text()))
             else:
                 row_min.append(0)
 
-            browser.find_element_by_class_name("next-link").click()
+            #print (row_max, row_min)
+            try:
+                browser.find_element_by_class_name("next-link").click()
+            except:
+                continue
             time.sleep(2)
 
         data_max.append(row_max)
@@ -114,10 +132,15 @@ def write_temp(village_dict, browser, state_dict, s3, kind='max'):
 
         wr.writerow(['YEAR','Village','1', '2', '3', '4', '5',
                          '6', '7', '8', '9', '10', '11', '12'])
-
+        count = 1
         for village, location in village_dict.items():
-            data_max, data_min = get_temp(village, location,
-                                          browser, state_dict)
+            if 'CUDDAPAH' in village:
+                data_max, data_min = get_temp(village, location,
+                                              browser, state_dict, count)
+                count += 1
+            else:
+                data_max, data_min = get_temp(village, location,
+                                              browser, state_dict)
             if kind == 'max':
                 wr.writerows(data_max)
 
