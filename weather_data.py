@@ -71,15 +71,19 @@ def get_data(state, district, loc_dict, count=0):
     return headers, data
 
 if __name__ == '__main__':
-    states = ['ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA1', 'MAHARASHTRA2',
-              'MAHARASHTRA3', 'MAHARASHTRA4', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
-              'TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
-              'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
 
-    districts = ['CUDDAPAH', 'WEST GODAVARI', 'THANE', 'OSMANABAD', 'WASHIM',
+    districts = ['BELLARY','CUDDAPAH', 'WEST GODAVARI', 'THANE', 'PUNE',
+                 'OSMANABAD', 'WASHIM',
                  'GADCHIROLI', 'KURNOOL', 'CUDDAPAH', 'THENI', 'KHAMMAM',
                  'EAST GODAVARI', 'PRAKASAM', 'CUDDAPAH', 'KARIMNAGAR', 'WARANGAL',
                   'GUNTUR']
+
+    states = ['KARNATAKA','ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA',
+              'MAHARASHTRA',
+              'MAHARASHTRA', 'MAHARASHTRA', 'MAHARASHTRA', 'ANDHRA PRADESH',
+              'ANDHRA PRADESH','TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH',
+              'ANDHRA PRADESH', 'ANDHRA PRADESH',
+              'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
 
     loc_dict = {'MAHARASHTRA1': 'MAHARASHTRA1', 'MAHARASHTRA2': 'MAHARASHTRA2',
                 'MAHARASHTRA3': 'MAHARASHTRA3', 'MAHARASHTRA4': 'MAHARASHTRA4',

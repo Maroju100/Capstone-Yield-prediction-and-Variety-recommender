@@ -20,17 +20,18 @@ import re
 
 def get_temp(village, location, browser, state_dict):
 
-    browser.maximize_window()
-    browser.get("https://www.wunderground.com/history/")
-
-    search = browser.find_element_by_id("histSearch")
-    #search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
 
     try:
-        if 'MAHARASHTRA' in village:
-            search.send_keys('{}, {}'.format(state_dict[village], village))
-        else:
-            search.send_keys('{}, {}'.format(village, location))
+        browser.get("https://www.wunderground.com/history/")
+        browser.maximize_window()
+        search = browser.find_element_by_id("histSearch")
+        #search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
+
+        #if 'MAHARASHTRA' in village:
+            #search.send_keys('{}'.format(state_dict[village]))
+        #else:
+            #search.send_keys('{}'.format(village))
+        search.send_keys('{}, {}'.format(village, location))
 
         select = Select(browser.find_element_by_class_name("day"))
         select.select_by_visible_text('14')
@@ -152,6 +153,28 @@ if __name__ == '__main__':
               'MAHARASHTRA','MAHARASHTRA', 'MAHARASHTRA', 'ANDHRA PRADESH',
               'ANDHRA PRADESH','TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH',
               'ANDHRA PRADESH', 'TELANGANA', 'TELANGANA','ANDHRA PRADESH']
+
+    districts = ['BELLARY','CUDDAPAH', 'WEST GODAVARI', 'THANE', 'PUNE',
+                 'OSMANABAD', 'WASHIM',
+                 'GADCHIROLI', 'KURNOOL', 'CUDDAPAH', 'THENI', 'KHAMMAM',
+                 'EAST GODAVARI', 'PRAKASAM', 'CUDDAPAH', 'KARIMNAGAR', 'WARANGAL',
+                  'GUNTUR']
+
+    states = ['KARNATAKA','ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA',
+              'MAHARASHTRA',
+              'MAHARASHTRA', 'MAHARASHTRA', 'MAHARASHTRA', 'ANDHRA PRADESH',
+              'ANDHRA PRADESH','TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH',
+              'ANDHRA PRADESH', 'ANDHRA PRADESH',
+              'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
+
+    loc_dict = {'THANE': 'MAHARASHTRA1', 'PUNE': 'MAHARASHTRA',
+                'GADCHIROLI': 'MAHARASHTRA2','OSMANABAD': 'MAHARASHTRA3',
+                'WASHIM': 'MAHARASHTRA4',
+                'CUDDAPAH': {1:'DUVVURU', 2:'PORUMAMILLA', 3:'S MYDUKUR'},
+                'WEST GODAVARI': 'ELURU','KURNOOL':'KURNOOL', 'THENI': 'CUMBAM',
+                 'KHAMMAM': 'SATHUPALLY','EAST GODAVARI': 'RAJAHAMANDRY',
+                 'PRAKASAM': 'MARKAPUR', 'KARIMNAGAR':'KARIMNAGAR',
+                 'WARANGAL': 'WARANGAL', 'GUNTUR': 'GUNTUR', 'BALLARI': 'BALLARI'}
 
     state_dict2 = dict(zip(df['Location'].unique(), states))
 

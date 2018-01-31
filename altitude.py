@@ -18,7 +18,7 @@ from selenium.webdriver.support import expected_conditions as expected
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-def get_alt(village, location, browser, state_dict):
+def get_alt(village, location, browser, state_dict, lat, lon):
     #executable_path = './phantomjs-2.1.1-linux-x86_64/bin/phantomjs'
 
     #service_log_path = './log/ghostdriver.log'
@@ -31,7 +31,7 @@ def get_alt(village, location, browser, state_dict):
     browser.find_element_by_id("change-location").click()
     time.sleep(2)
     search = browser.find_element_by_id("address")
-    search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
+    search.send_keys('{}, {}'.format(lat, lon))
 
     search.send_keys(Keys.ENTER)
     time.sleep(3)
@@ -52,7 +52,7 @@ def get_alt(village, location, browser, state_dict):
     return location, village, alt
 
 if __name__ == '__main__':
-    df = pd.read_csv('village_names.csv')
+    df = pd.read_csv('complete_vill_loc.csv')
 
     df.drop(columns='Unnamed: 0', inplace=True)
     location_groups = df.groupby(by='Location')
@@ -65,6 +65,7 @@ if __name__ == '__main__':
     states = ['KARNATAKA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
               'TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
               'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
+              
     state_dict = dict(zip(df['Location'].unique(), states))
 
     options = Options()
@@ -77,12 +78,17 @@ if __name__ == '__main__':
         wr.writerow(['Location', 'Village', 'Elevation'])
 
         for village, location in village_dict.items():
-            data = get_alt(village, location, browser, state_dict)
+
+            lat = df[df['Village'] == village]['Latitude'].values[0]
+            lon = df[df['Village'] == village]['Longitude'].values[0]
+
+            data = get_alt(village, location, browser, state_dict, lat, lon)
             wr.writerow(data)
             time.sleep(2)
 
-            s3.put_object(Bucket='capstone-web-scrape', Key='village_altitude_data.csv',
-                      Body=f.getvalue())
+            s3.put_object(Bucket='capstone-web-scrape',
+                          Key='new_village_altitude_data.csv',
+                          Body=f.getvalue())
 
 
 '''    with open("village_altitude_data.csv", "w") as f:
