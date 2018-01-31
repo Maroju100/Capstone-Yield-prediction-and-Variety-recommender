@@ -24,6 +24,7 @@ def transform_orginal(df, location_df):
     The function
     Add the splitting of 'MAHARASHTRA' to four different regions.
     '''
+    location_df.drop(columns='Unnamed: 0', inplace=True)
 
     df.loc[df['Location'] == 'BELLARY', 'Location'] =  'BALLARI'
     df['YEAR'] = df['Sown \nDate'].apply(lambda x: x.year)
@@ -81,7 +82,9 @@ def transform_orginal(df, location_df):
 def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
     '''
     '''
-
+    lat_lon_df.drop(columns='Unnamed: 0', inplace=True)
+    altitude_df.drop(columns='Unnamed: 0', inplace=True)
+    
     rain_org_df = pd.merge(df, rainfall_df, on=['Location', 'YEAR'])
 
     rain_org_df['Rainfall'] = rain_org_df.apply(lambda x:
@@ -102,8 +105,8 @@ def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
                                                 (x[str(x['Sow Month'])] + 7.05),
                                                  axis=1)
 
-    inter_df = pd.merge(rain_org_df, altitude_df.drop(columns='State'), on=['Village'])
-    final_df = pd.merge(inter_df, lat_lon_df.drop(columns='State'), on=['Village'])
+    inter_df = pd.merge(rain_org_df, altitude_df, on=['Village'])
+    final_df = pd.merge(inter_df, lat_lon_df, on=['Village'])
 
     return final_df.drop(columns=[str(i) for i in range(1, 13)])
 
@@ -138,7 +141,7 @@ def featurize(df, X_cols, y_col, dummy_cols):
     return X_train, X_test, y_train, y_test
 
 def groups():
-    pass  
+    pass
 
 
 
