@@ -102,7 +102,7 @@ def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
                                                 (x[str(x['Sow Month'])] + 7.05),
                                                  axis=1)
 
-    inter_df = pd.merge(rain_org_df, altitude_df.drop(columns='State'), on=['Location'])
+    inter_df = pd.merge(rain_org_df, altitude_df.drop(columns='State'), on=['Village'])
     final_df = pd.merge(inter_df, lat_lon_df.drop(columns='State'), on=['Location'])
 
     return final_df.drop(columns=[str(i) for i in range(1, 13)])

@@ -64,12 +64,12 @@ def get_temp(village, location, browser, state_dict):
             row_max.append(int(soup.find('select',
                                         {'class': 'year form-select'}).find('option',
                                         {'selected': "selected"}).get_text()))
-            row_max.append(village)
+            row_max.append(state_dict[village])
 
             row_min.append(int(soup.find('select',
                                         {'class': 'year form-select'}).find('option',
                                         {'selected': "selected"}).get_text()))
-            row_min.append(village)
+            row_min.append(state_dict[village])
 
             for i in range(12):
 
@@ -97,7 +97,8 @@ def get_temp(village, location, browser, state_dict):
         return data_max, data_min
 
     except:
-        return [[0, village], [0, village]], [[0, village], [0, village]]
+        return [[0, state_dict[village]], [0, state_dict[village]]],
+                [[0, state_dict[village]], [0, state_dict[village]]]
 
 def write_temp(village_dict, browser, state_dict, s3, kind='max'):
 
@@ -176,7 +177,8 @@ if __name__ == '__main__':
                  'PRAKASAM': 'MARKAPUR', 'KARIMNAGAR':'KARIMNAGAR',
                  'WARANGAL': 'WARANGAL', 'GUNTUR': 'GUNTUR', 'BALLARI': 'BALLARI'}
 
-    state_dict2 = dict(zip(df['Location'].unique(), states))
+    #state_dict2 = dict(zip(df['Location'].unique(), states))
+    state_dict2 = dict(zip(districts, states))
 
     options = Options()
     options.add_argument('-headless')
