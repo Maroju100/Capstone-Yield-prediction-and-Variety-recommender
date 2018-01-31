@@ -21,84 +21,91 @@ import re
 def get_temp(village, location, browser, state_dict):
 
 
+    #try:
+    browser.get("https://www.wunderground.com/history/")
+    browser.maximize_window()
+    search = browser.find_element_by_id("histSearch")
+    #search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
+
+    #if 'MAHARASHTRA' in village:
+        #search.send_keys('{}'.format(state_dict[village]))
+    #else:
+        #search.send_keys('{}'.format(village))
+    search.send_keys('{}, {}'.format(village, location))
+
+    select = Select(browser.find_element_by_class_name("day"))
+    select.select_by_visible_text('14')
+
+    select2 = Select(browser.find_element_by_class_name("year"))
+    select2.select_by_visible_text('2014')
+
+    browser.find_element_by_css_selector("input.button.radius").click()
+    time.sleep(2)
+
+    browser.get(browser.current_url.replace('Daily', 'Monthly'))
+    time.sleep(2)
+    #browser.find_element_by_css_selector("a.contentTabActive.brTop5").click()
     try:
-        browser.get("https://www.wunderground.com/history/")
-        browser.maximize_window()
-        search = browser.find_element_by_id("histSearch")
-        #search.send_keys('{}, {}, {}'.format(village, location, state_dict[location]))
-
-        #if 'MAHARASHTRA' in village:
-            #search.send_keys('{}'.format(state_dict[village]))
-        #else:
-            #search.send_keys('{}'.format(village))
-        search.send_keys('{}, {}'.format(village, location))
-
-        select = Select(browser.find_element_by_class_name("day"))
-        select.select_by_visible_text('14')
-
-        select2 = Select(browser.find_element_by_class_name("year"))
-        select2.select_by_visible_text('2014')
-
-        browser.find_element_by_css_selector("input.button.radius").click()
-        time.sleep(2)
-
-        browser.get(browser.current_url.replace('Daily', 'Monthly'))
-        time.sleep(2)
-        #browser.find_element_by_css_selector("a.contentTabActive.brTop5").click()
         soup = BeautifulSoup(browser.page_source.encode('utf-8').strip(),
                                                         'html.parser')
-        #soup = BeautifulSoup(re.sub("<!--|-->","", browser.page_source), "lxml")
+    except:
+        soup = BeautifulSoup(browser.page_source, 'lxml')
+    #soup = BeautifulSoup(re.sub("<!--|-->","", browser.page_source), "lxml")
 
-        data_max = []
-        data_min = []
-        year = int(soup.find('select',
+    data_max = []
+    data_min = []
+    year = int(soup.find('select',
+                                {'class': 'year form-select'}).find('option',
+                                {'selected': "selected"}).get_text())
+
+    while '2017' not in browser.current_url.split('?')[0]:
+        row_max = []
+        row_min = []
+
+
+
+        row_max.append(int(soup.find('select',
                                     {'class': 'year form-select'}).find('option',
-                                    {'selected': "selected"}).get_text())
+                                    {'selected': "selected"}).get_text()))
+        row_max.append(state_dict[village])
 
-        while '2017' not in browser.current_url.split('?')[0]:
-            row_max = []
-            row_min = []
+        row_min.append(int(soup.find('select',
+                                    {'class': 'year form-select'}).find('option',
+                                    {'selected': "selected"}).get_text()))
+        row_min.append(state_dict[village])
 
+        for i in range(12):
 
-
-            row_max.append(int(soup.find('select',
-                                        {'class': 'year form-select'}).find('option',
-                                        {'selected': "selected"}).get_text()))
-            row_max.append(state_dict[village])
-
-            row_min.append(int(soup.find('select',
-                                        {'class': 'year form-select'}).find('option',
-                                        {'selected': "selected"}).get_text()))
-            row_min.append(state_dict[village])
-
-            for i in range(12):
-
+            try:
                 soup = BeautifulSoup(browser.page_source.encode('utf-8').strip(),
                                                                 'html.parser')
-                #soup = BeautifulSoup(re.sub("<!--|-->","", browser.page_source),
-                                            #"lxml")
-                temp = soup.find_all('span', {'class': 'wx-value'})
-                row_max.append(float(temp[0].get_text()))
+            except:
+                soup = BeautifulSoup(browser.page_source, 'lxml')
 
-                if len(temp) > 5:
-                    row_min.append(float(temp[5].get_text()))
-                else:
-                    row_min.append(0)
+            #soup = BeautifulSoup(re.sub("<!--|-->","", browser.page_source),
+                                        #"lxml")
+            temp = soup.find_all('span', {'class': 'wx-value'})
+            row_max.append(float(temp[0].get_text()))
 
-                browser.find_element_by_class_name("next-link").click()
-                time.sleep(2)
+            if len(temp) > 5:
+                row_min.append(float(temp[5].get_text()))
+            else:
+                row_min.append(0)
 
-            data_max.append(row_max)
-            data_min.append(row_min)
+            browser.find_element_by_class_name("next-link").click()
+            time.sleep(2)
 
-            if (len(data_max) >= 3) or (len(data_min) >= 3):
-                break
+        data_max.append(row_max)
+        data_min.append(row_min)
 
-        return data_max, data_min
+        if (len(data_max) >= 3) or (len(data_min) >= 3):
+            break
 
-    except:
-        return [[0, state_dict[village]], [0, state_dict[village]]],
-                [[0, state_dict[village]], [0, state_dict[village]]]
+    return data_max, data_min
+
+    #except:
+        #return ([[0, state_dict[village]], [0, state_dict[village]]],
+                #[[0, state_dict[village]], [0, state_dict[village]]])
 
 def write_temp(village_dict, browser, state_dict, s3, kind='max'):
 
@@ -175,7 +182,7 @@ if __name__ == '__main__':
                 'WEST GODAVARI': 'ELURU','KURNOOL':'KURNOOL', 'THENI': 'CUMBAM',
                  'KHAMMAM': 'SATHUPALLY','EAST GODAVARI': 'RAJAHAMANDRY',
                  'PRAKASAM': 'MARKAPUR', 'KARIMNAGAR':'KARIMNAGAR',
-                 'WARANGAL': 'WARANGAL', 'GUNTUR': 'GUNTUR', 'BALLARI': 'BALLARI'}
+                 'WARANGAL': 'WARANGAL', 'GUNTUR': 'GUNTUR', 'BELLARY': 'BALLARI'}
 
     #state_dict2 = dict(zip(df['Location'].unique(), states))
     state_dict2 = dict(zip(districts, states))

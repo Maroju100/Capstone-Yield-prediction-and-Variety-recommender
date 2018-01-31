@@ -26,7 +26,7 @@ def get_alt(village, location, browser, state_dict, lat, lon):
     #browser = webdriver.PhantomJS()#(executable_path=executable_path, service_log_path=service_log_path)
 
 
-    browser.get("https://www.whatismyelevation.com/##")
+    browser.get("https://www.whatismyelevation.com")
 
     browser.find_element_by_id("change-location").click()
     time.sleep(2)
@@ -34,6 +34,9 @@ def get_alt(village, location, browser, state_dict, lat, lon):
     search.send_keys('{}, {}'.format(lat, lon))
 
     search.send_keys(Keys.ENTER)
+    search.send_keys(Keys.ENTER)
+    search.send_keys(Keys.ENTER)
+
     time.sleep(3)
     text = browser.page_source
     #coord = browser.current_url.split('@')[1].split(',')
@@ -65,12 +68,13 @@ if __name__ == '__main__':
     states = ['KARNATAKA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'MAHARASHTRA', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
               'TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
               'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
-              
+
     state_dict = dict(zip(df['Location'].unique(), states))
 
-    options = Options()
-    options.add_argument('-headless')
-    browser = Firefox(executable_path='geckodriver', firefox_options=options)
+    #options = Options()
+    #options.add_argument('-headless')
+    #browser = Firefox(executable_path='geckodriver', firefox_options=options)
+    browser = Firefox()
     s3 = boto3.client('s3')
 
     with StringIO() as f:
@@ -81,8 +85,9 @@ if __name__ == '__main__':
 
             lat = df[df['Village'] == village]['Latitude'].values[0]
             lon = df[df['Village'] == village]['Longitude'].values[0]
-
+            print (lat, lon)
             data = get_alt(village, location, browser, state_dict, lat, lon)
+            print (data)
             wr.writerow(data)
             time.sleep(2)
 
