@@ -65,10 +65,10 @@ class MyModel():
     def cv_params(self, X, y, param_grid_rf, param_grid_gb, cv=5):
 
         cv_params_rf = GridSearchCV(estimator=self.rf, param_grid=param_grid_rf,
-                                    scoring=mean_squared_error, n_jobs=-1)
+                                    scoring="mean_squared_error", n_jobs=-1, cv=cv)
 
         cv_params_gbr = GridSearchCV(estimator=self.gbr, param_grid=param_grid_gb,
-                                    scoring=mean_squared_error, n_jobs=-1)
+                                    scoring="mean_squared_error", n_jobs=-1, cv=cv)
 
         processes = [mp.Process(target=cv_params_rf.fit,
                                 args=(X, y)),
@@ -81,16 +81,75 @@ class MyModel():
             p.join()
 
         rf_best_params = cv_params_rf.best_estimator_,
-                         cv_params_rf.best_score_ ** 0.5,
+                         cv_params_rf.best_score_,
                          cv_params_rf.best_params_
 
         gbr_best_params = cv_params_gbr.best_estimator_,
-                         cv_params_gbr.best_score_ ** 0.5,
+                         cv_params_gbr.best_score_,
                          cv_params_gbr.best_params_
 
         return rf_best_params, gbr_best_params
 
-    def cv(self, X_train, y_train, k=5):
+    def cv_score(self, X, y, param_grid_rf, param_grid_gb, k=5):
+
+        RMS_train_rf = []
+        RMS_test_rf = []
+        RMS_train_gb = []
+        RMS_test_gb = []
+        kf = KFold(n_splits=k)
+
+        for train_index, test_index in kf.split(X):
+
+            X_train, X_test = X[train_index], X[test_index]
+            y_train, y_test = y[train_index], y[test_index]
+
+            rf_params, gbr_params = self.cv_params(X_train, y_train,
+                                                   param_grid_rf,
+                                                   param_grid_gb)
+
+            model_rf = rf_params[0]
+            model_gb = gbr_params[0]
+            train_predicted_rf = model_rf.predict(X_train)
+            test_predicted_rf = model_rf.predict(X_test)
+            train_predicted_gb = model_gb.predict(X_train)
+            test_predicted_gb = model_gb.predict(X_test)
+
+            RMS_train_rf.append(mean_squared_error(y_train, train_predicted_rf))
+            RMS_test_rf.append(mean_squared_error(y_test, test_predicted_rf))
+            RMS_train_gb.append(mean_squared_error(y_train, train_predicted_gb))
+            RMS_test_gb.append(mean_squared_error(y_test, test_predicted_gb))
+            #RMS.append(np.sqrt(mean_squared_error(Y_test, test_predicted)))
+        return ('RF Train MSE  : {}'.format(np.mean(RMS_train_rf)),
+                'RF Test  MSE  : {}'.format(np.mean(RMS_test_rf)),
+                'GB Train MSE  : {}'.format(np.mean(RMS_train_gb)),
+                'GB Test  MSE  : {}'.format(np.mean(RMS_test_gb)))
+
+    def cv_score_parallel(self, model, X, y, param_grid_rf, param_grid_gb, k=5):
+
+        RMS_train_rf = []
+        RMS_test_rf = []
+        RMS_train_gb = []
+        RMS_test_gb = []
+        kf = KFold(n_splits=k)
+
+        for train_index, test_index in kf.split(X):
+
+            X_train, X_test = X[train_index], X[test_index]
+            y_train, y_test = y[train_index], y[test_index]
+
+
+            train_predicted = model_rf.predict(X_train)
+            test_predicted = model_rf.predict(X_test)
+
+            RMS_train.append(mean_squared_error(y_train, train_predicted))
+            RMS_train.append(mean_squared_error(y_test, test_predicted))
+            #RMS.append(np.sqrt(mean_squared_error(Y_test, test_predicted)))
+        return ('RF Train : {}'.format(np.mean(RMS_train)),
+                'RF Test  : {}'.format(np.mean(RMS_test)),
+                'GB Train : {}'.format(np.mean(RMS_train)),
+                'GB Test  : {}'.format(np.mean(RMS_test)))
+
+'''    def cv(self, X_train, y_train, k=5):
 
         RMS = []
         kf = KFold(n_splits=k)
@@ -108,24 +167,4 @@ class MyModel():
 
             RMS.append(mean_squared_error(Y_test, test_predicted) ** 0.5)
             #RMS.append(np.sqrt(mean_squared_error(Y_test, test_predicted)))
-        return np.mean(RMS)
-
-    def cv_score(self, X_train, y_train, k=5):
-
-        RMS = []
-        kf = KFold(n_splits=k)
-
-        for train_index, test_index in kf.split(X_train):
-
-            x_train, x_test = X_train[train_index], X_train[test_index]
-            Y_train, Y_test = y_train[train_index], y_train[test_index]
-
-            linear =  LinearRegression()
-            linear.fit(x_train, Y_train)
-
-            train_predicted = linear.predict(x_train)
-            test_predicted = linear.predict(x_test)
-
-            RMS.append(mean_squared_error(Y_test, test_predicted) ** 0.5)
-            #RMS.append(np.sqrt(mean_squared_error(Y_test, test_predicted)))
-        return np.mean(RMS)
+        return np.mean(RMS)'''

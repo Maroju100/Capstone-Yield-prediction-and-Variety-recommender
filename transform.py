@@ -83,8 +83,31 @@ def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
     '''
     '''
     lat_lon_df.drop(columns='Unnamed: 0', inplace=True)
-    altitude_df.drop(columns='Unnamed: 0', inplace=True)
-    
+    #altitude_df.drop(columns='Unnamed: 0', inplace=True)
+
+    location_df = lat_lon_df[lat_lon_df['Location'] == 'MAHARASHTRA']
+
+    cluster_dict = {0:'3', 1:'4', 2:'1', 3:'', 4:'2'}
+
+    km = KMeans(n_clusters=5, random_state=0, n_init=15, max_iter=400, n_jobs=-1)
+    x = location_df[['Latitude', 'Longitude']]
+    km.fit(x)
+    clusters = km.predict(x)
+    cluster_list = [x.values[clusters == i] for i in range(5)]
+    full_cluster_list = [location_df.values[clusters == i] for i in range(5)]
+
+    vil_names = [location_df[clusters == i]['Village'].values for i in range(5)]
+
+    for data in [lat_lon_df, altitude_df]:
+        for i in range(5):
+            #df2.loc[df2['Village'].values in vil_names[i], 'Location'] = 'MAHARASHTRA'+ cluster_dict[i]
+            data['Location'] = data['Village'].apply(lambda x:
+                                                 ('MAHARASHTRA'+ cluster_dict[i])
+                                                 if x in vil_names[i]
+                                                 else
+                                                 df[df['Village'] == x]['Location'].values[0],
+                                                 0)
+
     rain_org_df = pd.merge(df, rainfall_df, on=['Location', 'YEAR'])
 
     rain_org_df['Rainfall'] = rain_org_df.apply(lambda x:
@@ -140,11 +163,15 @@ def featurize(df, X_cols, y_col, dummy_cols):
 
     return X_train, X_test, y_train, y_test
 
-def groups():
-    pass
+def groups(df, X_cols, y_col, dummy_cols, group_by='Location'):
 
+    group = pd.groupby(by='Location')
+    grp_dict = {}
 
+    for i, grp in group:
+        grp_dict[i] = featurize(grp, X_cols, y_col, dummy_cols)
 
+    return grp_dict
 
 
 
