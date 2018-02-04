@@ -144,22 +144,16 @@ def featurize(df, X_cols, y_col, dummy_cols):
 
 
     ss = StandardScaler()
-    ss.fit(X)
-    X_scaled = pd.DataFrame(ss.transform(X), columns=X.columns)
-    #X['Harvest Date'] = X['Harvest Date'].apply(lambda x:
-                                                              #int(
-                                                              #time.mktime(
-                                                              #x.timetuple())
-                                                              #/ 86400
-                                                              #) -
-                                                              #int(
-                                                              #time.mktime(
-                                                              #datetime(
-                                                              #x.timetuple()[0],
-                                                               #1, 1))
-                                                               #/ 86400)
-                                                              #)
-    X_train, X_test, y_train, y_test = train_test_split(X_scaled, y)
+    X_initial = df[X_cols]
+    y = df[y_col]
+    ss.fit(X_initial)
+    X_scaled = pd.DataFrame(ss.transform(X_initial), columns=X_cols)
+    X_new = pd.concat([X_scaled, df[dummy_cols].astype(str)], axis=1)
+    #print (X_new.head())
+    X = pd.get_dummies(X_new, columns=dummy_col)
+    X.dropna(inplace=True)
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y)
 
     return X_train, X_test, y_train, y_test
 

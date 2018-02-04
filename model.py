@@ -21,7 +21,7 @@ import csv
 #from selenium.webdriver.support.ui import Select
 #from selenium.webdriver.common.keys import Keys
 #import selenium
-import time
+from transform import *
 
 class MyModel():
     '''
@@ -168,3 +168,28 @@ class MyModel():
             RMS.append(mean_squared_error(Y_test, test_predicted) ** 0.5)
             #RMS.append(np.sqrt(mean_squared_error(Y_test, test_predicted)))
         return np.mean(RMS)'''
+
+if __name__ == '__main__':
+
+    org_df = pd.read_excel('Downloads/Monsanto Dataset Sample.xlsx', header=1)
+    rainfall_df = pd.read_csv('weather_data.csv')
+
+    altitude_df = pd.read_csv('Downloads/new_village_altitude_data.csv')
+    lat_lon_df = pd.read_csv('complete_vill_loc.csv')
+    location_df = lat_lon_df[lat_lon_df['Location'] == 'MAHARASHTRA']
+
+    un_merged = transform_orginal(org_df, location_df)
+    merged = merge_transform(un_merged, rainfall_df, altitude_df, lat_lon_df)
+
+    X_cols = ['Sowing Week of Year', 'Variety',
+          'Sown \nDate', 'YEAR', 'Sow Month',
+          'Days Till Harvest', 'Rainfall', 'Elevation', 'Latitude',
+          'Longitude', 'Wet Ear to Raw Seed Recovery']
+
+    y_col = ['Dry Yield Per Acre']
+
+    dummy_col = ['Variety']
+
+    X_train, X_test, y_train, y_test = featurize(merged, X_cols,
+                                                 y_col, dummy_col)
+    

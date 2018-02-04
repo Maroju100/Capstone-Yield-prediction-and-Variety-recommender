@@ -55,8 +55,8 @@
                        defaultFill: '#dddddd'
                    },
                    data: {
-                       'AP': { "name": "Andhra Pradesh",
-                                "id" : "AP",
+                       'AP': { name: "Andhra Pradesh",
+                                id : "AP",
                               "fillKey": 'MINOR',
                               "Location1": "DUVVURU",
                               "Location2": "ELURU",
@@ -70,15 +70,15 @@
                              "Location10":'TELANGANA, WARANGAL',
                              "Location11":'SATHUPALLY'},
 
-                       'MH': { "fillKey": 'MINOR',
-                              Location1: 'PUNE',
-                              Location2: 'THANE',
-                              "Location3": 'GADCHIROLI',
-                              "Location4": 'OSMANABAD',
-                              "Location5": 'WASHIM'},
+                           'MH': { "fillKey": 'MINOR',
+                                  Location1: 'PUNE',
+                                  Location2: 'THANE',
+                                  "Location3": 'GADCHIROLI',
+                                  "Location4": 'OSMANABAD',
+                                  "Location5": 'WASHIM'},
 
-                       'TN': { "fillKey": 'MINOR', Location1: 'CUMBAM' },
-                       'KA': { "fillKey": 'MINOR', Location1: 'BELLARY' }
+                           'TN': { "fillKey": 'MINOR', Location1: 'CUMBAM' },
+                           'KA': { "fillKey": 'MINOR', Location1: 'BELLARY' }
                    },
                    setProjection: function (element) {
                        var projection = d3.geo.mercator()
@@ -91,30 +91,75 @@
 
        let bubbles = [
            {
-
                centered: "MH",
                fillKey: "MAJOR",
                radius: 20,
-               state: "Maharastra"
+               state: "Maharastra",
+               "Location1": 'PUNE',
+               "Varieties1": ['1367', '1317', '1355'],
+               "Location2": 'THANE',
+               "Varieties2": ['1351', '1355'],
+               "Location3": 'GADCHIROLI',
+               "Varieties3": ['1373', '1351',
+                              '1355', '1317'],
+               "Location4": 'OSMANABAD',
+               "Varieties4": ['1351', '1355', '1361'],
+               "Location5": 'WASHIM',
+               "Varieties5": ['1351', '1355', '1317']
 
            },
            {
                centered: "AP",
                fillKey: "MEDIUM",
                radius: 20,
-               state: "Andhra Pradesh"
+               state: "Andhra Pradesh",
+               "Location1": "DUVVURU",
+               "Varieties1": ['1315', '1370',
+                              '1375', '1354'],
+               "Location2": "ELURU",
+               "Varieties2": ['1324', '1323',
+                              '1322', '1375'],
+               "Location3": 'KURNOOL',
+               "Varieties3": ['1373', '1374', '1355'],
+               "Location4": 'PORUMAMILLA',
+               "Varieties4": ['1354', '1315',
+                              '1355','1361'],
+               "Location5": 'RAJAHAMANDRY',
+               "Varieties5": ['1323', '1375',
+                              '1372', '1374'],
+               "Location6": 'MARKAPUR',
+               "Varieties6": ['1351'],
+               "Location7": 'S MYDUKUR',
+               "Varieties7": ['1351', '1367', '1357'],
+               "Location8": 'GUNTUR',
+               "Varieties8": ['1351', '1317'],
+               "Location9":'SATHUPALLY',
+               "Varieties9": ['1321', '1323',
+                               '1375', '1303'],
+               "Location10": 'TELANGANA, KARIMNAGAR',
+               "Varieties10": ['1373', '1324', '1351'],
+              "Location11":'TELANGANA, WARANGAL',
+              "Varieties11": ['1351'],
+
+
            },
            {
                centered: "TN",
                fillKey: "MAJOR",
                radius: 20,
-               state: "Tamil Nadu"
+               state: "Tamil Nadu",
+               "Location1": 'CUMBAM',
+               "Varieties1": ['1352', '1358',
+                              '1315', '1361']
            },
            {
                centered: "KA",
                fillKey: "MEDIUM",
                radius: 20,
-               state: "Karnataka"
+               state: "Karnataka",
+               "Location1": 'BELLARY',
+               "Varieties1": ['1351', '1355',
+                              '1301', '1361']
            },
          ]
                // // ISO ID code for city or <state></state>
@@ -123,14 +168,20 @@
                      popupTemplate: function(geo, data) {
            if ( !data ) return; //IF no data is present, nothing will be displayed in the hover
          return ['<div class="hoverinfo"><strong>'
-        + '<table class="table-example" style="width:300px"><tr><td>State:</td><td>'
-        + data.name +'</td></tr><tr><td>Varieties for Location1:</td><td>'
-        + data.id +'</td></tr><tr><td>Varieties for Location2:</td><td>'
-        + data.Location3 +'</td></tr><tr><td>Varieties for Location3:</td><td>'
-        + data.Location4 +'</td></tr><tr><td>Varieties for Location4:</td><td>'
-        + data.Location5 +'</td></tr><tr><td>Varieties for Location5:</td><td>'
-        + data.Location6 +'</td></tr><tr><td>Varieties for Location6:</td><td>'
-        + data.Location7 +'</td></tr></table>'+'</div>'].join('');
+        + '<table class="table-example" style="width:300px"><tr><td>State:    '
+        + data.state
+        +'</td></tr><tr><td>Varieties for '+data.Location1+':</td><td>'
+        + data.Varieties1 +'</td></tr><tr><td>Varieties for '+data.Location2+':</td><td>'
+        + data.Varieties2 +'</td></tr><tr><td>Varieties for '+data.Location3+':</td><td>'
+        + data.Varieties3 +'</td></tr><tr><td>Varieties for '+data.Location4+':</td><td>'
+        + data.Varieties4 +'</td></tr><tr><td>Varieties for '+data.Location5+':</td><td>'
+        + data.Varieties5 +'</td></tr><tr><td>Varieties for '+data.Location6+':</td><td>'
+        + data.Varieties6 +'</td></tr><tr><td>Varieties for '+data.Location7+':</td><td>'
+        + data.Varieties7 +'</td></tr><tr><td>Varieties for '+data.Location8+':</td><td>'
+        + data.Varieties8 +'</td></tr><tr><td>Varieties for '+data.Location9+':</td><td>'
+        + data.Varieties9 +'</td></tr><tr><td>Varieties for '+data.Location10+':</td><td>'
+        + data.Varieties10 +'</td></tr><tr><td>Varieties for '+data.Location11+':</td><td>'
+        + data.Varieties11 +'</td></tr></table>'+'</div>'].join('');
                      //popupTemplate: function(geo, data) {
                           //         return ['<div class="hoverinfo"><strong>',
                             //               geo.properties.name,
