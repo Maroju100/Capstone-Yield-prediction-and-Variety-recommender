@@ -181,7 +181,7 @@ if __name__ == '__main__':
     un_merged = transform_orginal(org_df, location_df)
     merged = merge_transform(un_merged, rainfall_df, altitude_df, lat_lon_df)
 
-    X_cols = ['Sowing Week of Year', 'Variety',
+    X_cols = ['Sowing Week of Year',
           'Sown \nDate', 'YEAR', 'Sow Month',
           'Days Till Harvest', 'Rainfall', 'Elevation', 'Latitude',
           'Longitude', 'Wet Ear to Raw Seed Recovery']
