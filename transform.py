@@ -133,14 +133,14 @@ def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
 
     return final_df.drop(columns=[str(i) for i in range(1, 13)])
 
-def featurize(df, X_cols, y_col, dummy_cols):
+def featurize(df, X_cols, y_col, dummy_cols, split=True):
     '''
     '''
-    X_initial = df[X_cols]
-    y = df[y_col]
+    #X_initial = df[X_cols]
+    #y = df[y_col]
 
 
-    X = pd.get_dummies(X_initial, columns=dummy_cols)
+    #X = pd.get_dummies(X_initial, columns=dummy_cols)
 
 
     ss = StandardScaler()
@@ -150,8 +150,11 @@ def featurize(df, X_cols, y_col, dummy_cols):
     X_scaled = pd.DataFrame(ss.transform(X_initial), columns=X_cols)
     X_new = pd.concat([X_scaled, df[dummy_cols].astype(str)], axis=1)
     #print (X_new.head())
-    X = pd.get_dummies(X_new, columns=dummy_col)
+    X = pd.get_dummies(X_new, columns=dummy_cols)
     X.dropna(inplace=True)
+    
+    if not split:
+        return X, y
 
     X_train, X_test, y_train, y_test = train_test_split(X, y)
 
