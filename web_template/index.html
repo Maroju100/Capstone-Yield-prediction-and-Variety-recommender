@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>One Page Wonder - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="text-center navbar-brand" href="#">ANUBHAV RANA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">Variety Recommender</h1>
+          <h2 class="masthead-subheading mb-0">With Variety Specific Recommendations</h2>
+          <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Below</a>
+        </div>
+      </div>
+      <div class="bg-circle-1 bg-circle"></div>
+      <div class="bg-circle-2 bg-circle"></div>
+      <div class="bg-circle-3 bg-circle"></div>
+      <div class="bg-circle-4 bg-circle"></div>
+    </header>
+</body>
+    <section>
+      <body>
+      <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+
+            <script type="text/javascript">
+            var bubble_map = new Datamap({
+                       element: document.getElementById('india'),
+                       scope: 'india',
+                       geographyConfig: {
+                           popupOnHover: true,
+                           highlightOnHover: true,
+                           borderColor: '#444',
+                           borderWidth: 0.5,
+                           dataUrl: 'https://rawgit.com/Anujarya300/bubble_maps/master/data/geography-data/india.topo.json'
+                           //dataJson: topoJsonData
+
+                       },
+                       fills: {
+                           'MAJOR': '#306596',
+                           'MEDIUM': '#0fa0fa',
+                           'MINOR': '#bada55',
+                           defaultFill: '#dddddd'
+                       },
+                       data: {
+                           'AP': { name: "Andhra Pradesh",
+                                    id : "AP",
+                                  "fillKey": 'MINOR',
+                                  "Location1": "DUVVURU",
+                                  "Location2": "ELURU",
+                                  "Location3": 'KURNOOL',
+                                  "Location4": 'PORUMAMILLA',
+                                  "Location5": 'RAJAHAMANDRY',
+                                  "Location6": 'MARKAPUR',
+                                  "Location7": 'S MYDUKUR',
+                                  "Location8": 'GUNTUR',
+                                  "Location9": 'TELANGANA, KARIMNAGAR,',
+                                 "Location10":'TELANGANA, WARANGAL',
+                                 "Location11":'SATHUPALLY'},
+
+                               'MH': { "fillKey": 'MINOR',
+                                      "Location1": 'PUNE',
+                                      "Location2": 'THANE',
+                                      "Location3": 'GADCHIROLI',
+                                      "Location4": 'OSMANABAD',
+                                      "Location5": 'WASHIM'},
+
+                               'TN': { "fillKey": 'MINOR', Location1: 'CUMBAM' },
+                               'KA': { "fillKey": 'MINOR', Location1: 'BELLARY' }
+                       },
+                       setProjection: function (element) {
+                           var projection = d3.geo.mercator()
+                               .center([78.9629, 23.5937]) // always in [East Latitude, North Longitude]
+                               .scale(1000);
+                           var path = d3.geo.path().projection(projection);
+                           return { path: path, projection: projection };
+                       }
+                   });
+
+           let bubbles = [
+               {
+                   centered: "MH",
+                   fillKey: "MAJOR",
+                   radius: 20,
+                   state: "Maharastra",
+                   "Location1": 'PUNE',
+                   "Varieties1": ['1367', '1317', '1355'],
+                   "Location2": 'THANE',
+                   "Varieties2": ['1351', '1355'],
+                   "Location3": 'GADCHIROLI',
+                   "Varieties3": ['1373', '1351',
+                                  '1355', '1317'],
+                   "Location4": 'OSMANABAD',
+                   "Varieties4": ['1351', '1355', '1361'],
+                   "Location5": 'WASHIM',
+                   "Varieties5": ['1351', '1355', '1317']
+
+               },
+               {
+                   centered: "AP",
+                   fillKey: "MEDIUM",
+                   radius: 20,
+                   state: "Andhra Pradesh",
+                   "Location1": "DUVVURU",
+                   "Varieties1": ['1315', '1370',
+                                  '1375', '1354'],
+                   "Location2": "ELURU",
+                   "Varieties2": ['1324', '1323',
+                                  '1322', '1375'],
+                   "Location3": 'KURNOOL',
+                   "Varieties3": ['1373', '1374', '1355'],
+                   "Location4": 'PORUMAMILLA',
+                   "Varieties4": ['1354', '1315',
+                                  '1355','1361'],
+                   "Location5": 'RAJAHAMANDRY',
+                   "Varieties5": ['1323', '1375',
+                                  '1372', '1374'],
+                   "Location6": 'MARKAPUR',
+                   "Varieties6": ['1351'],
+                   "Location7": 'S MYDUKUR',
+                   "Varieties7": ['1351', '1367', '1357'],
+                   "Location8": 'GUNTUR',
+                   "Varieties8": ['1351', '1317'],
+                   "Location9":'SATHUPALLY',
+                   "Varieties9": ['1321', '1323',
+                                   '1375', '1303'],
+                   "Location10": 'TELANGANA, KARIMNAGAR',
+                   "Varieties10": ['1373', '1324', '1351'],
+                  "Location11":'TELANGANA, WARANGAL',
+                  "Varieties11": ['1351'],
+
+
+               },
+               {
+                   centered: "TN",
+                   fillKey: "MAJOR",
+                   radius: 20,
+                   state: "Tamil Nadu",
+                   "Location1": 'CUMBAM',
+                   "Varieties1": ['1352', '1358',
+                                  '1315', '1361']
+               },
+               {
+                   centered: "KA",
+                   fillKey: "MEDIUM",
+                   radius: 20,
+                   state: "Karnataka",
+                   "Location1": 'BELLARY',
+                   "Varieties1": ['1351', '1355',
+                                  '1301', '1361']
+               },
+             ]
+                   // // ISO ID code for city or <state></state>
+                   setTimeout(() => { // only start drawing bubbles on the map when map has rendered completely.
+                       bubble_map.bubbles(bubbles, {
+                         popupTemplate: function(geo, data) {
+               if ( !data ) return; //IF no data is present, nothing will be displayed in the hover
+             return ['<div class="hoverinfo"><strong>'
+            + '<table class="table-example" style="width:300px"><tr><td>State:    '
+            + data.state
+            +'</td></tr><tr><td>Varieties for '+data.Location1+':</td><td>'
+            + data.Varieties1 +'</td></tr><tr><td>Varieties for '+data.Location2+':</td><td>'
+            + data.Varieties2 +'</td></tr><tr><td>Varieties for '+data.Location3+':</td><td>'
+            + data.Varieties3 +'</td></tr><tr><td>Varieties for '+data.Location4+':</td><td>'
+            + data.Varieties4 +'</td></tr><tr><td>Varieties for '+data.Location5+':</td><td>'
+            + data.Varieties5 +'</td></tr><tr><td>Varieties for '+data.Location6+':</td><td>'
+            + data.Varieties6 +'</td></tr><tr><td>Varieties for '+data.Location7+':</td><td>'
+            + data.Varieties7 +'</td></tr><tr><td>Varieties for '+data.Location8+':</td><td>'
+            + data.Varieties8 +'</td></tr><tr><td>Varieties for '+data.Location9+':</td><td>'
+            + data.Varieties9 +'</td></tr><tr><td>Varieties for '+data.Location10+':</td><td>'
+            + data.Varieties10 +'</td></tr><tr><td>Varieties for '+data.Location11+':</td><td>'
+            + data.Varieties11 +'</td></tr></table>'+'</div>'].join('');
+                         //popupTemplate: function(geo, data) {
+                              //         return ['<div class="hoverinfo"><strong>',
+                                //               geo.properties.name,
+
+                                  //             '</strong></div>'];
+                           }
+                       });
+                   }, 1000);
+
+                     //done: function(bubble_map){
+                      // bubble_map.svg.selectAll('.bubbles').on('click',
+                                      //function(bubble, data) {
+                                       //console.log(bubble)
+                                       //alert("hello");
+                                     //});
+                                       //return ['<div class="hoverinfo"<strong>',
+                                               //data.Locations,
+                                               //'</strong></div>']});
+                              //   }
+
+
+
+
+               </script>
+
+          </div>
+          </header>
+        </body>
+    </section>
+<body>
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4">We salute you!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Let there be rock!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

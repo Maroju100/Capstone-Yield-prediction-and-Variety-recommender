@@ -11,7 +11,7 @@ import time
 from datetime import datetime
 
 import multiprocessing as mp
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.model_selection import train_test_split, GridSearchCV, KFold
 
 #from bs4 import BeautifulSoup
 #from urllib.request import urlopen
@@ -49,8 +49,11 @@ class MyModel():
 
     def predict(self, X):
 
-        (self.predictions_lr, self.predictions_gbr, self.predictions_rf
-        = self.lr.predict(X), self.gbr.predict(X), self.rf.predict(X))
+        (self.predictions_lr,
+        self.predictions_gbr,
+        self.predictions_rf) = (self.lr.predict(X),
+                                self.gbr.predict(X),
+                                self.rf.predict(X))
 
         return self.predictions_lr, self.predictions_gbr, self.predictions_rf
 
@@ -65,30 +68,32 @@ class MyModel():
     def cv_params(self, X, y, param_grid_rf, param_grid_gb, cv=5):
 
         cv_params_rf = GridSearchCV(estimator=self.rf, param_grid=param_grid_rf,
-                                    scoring="mean_squared_error", n_jobs=-1, cv=cv)
+                                    scoring="mean_squared_error", n_jobs=-1,
+                                    cv=cv, refit=True)
 
         cv_params_gbr = GridSearchCV(estimator=self.gbr, param_grid=param_grid_gb,
-                                    scoring="mean_squared_error", n_jobs=-1, cv=cv)
+                                    scoring="mean_squared_error", n_jobs=-1,
+                                    cv=cv, refit=True)
 
         processes = [mp.Process(target=cv_params_rf.fit,
-                                args=(X, y)),
+                                args=(X, y.values.reshape(1, -1))),
                      mp.Process(target=cv_params_gbr.fit,
-                                args=(X, y))]
+                                args=(X, y.values.reshape(1, -1)))]
         for p in processes:
             p.start()
 
         for p in processes:
             p.join()
+        cv_params_rf.set_params()
+        cv_params_gbr.set_params()
+        #rf_best_params = (cv_params_rf.best_estimator_,
+        #                 cv_params_rf.best_score_,
+        #                 cv_params_rf.best_params_)
 
-        rf_best_params = cv_params_rf.best_estimator_,
-                         cv_params_rf.best_score_,
-                         cv_params_rf.best_params_
-
-        gbr_best_params = cv_params_gbr.best_estimator_,
-                         cv_params_gbr.best_score_,
-                         cv_params_gbr.best_params_
-
-        return rf_best_params, gbr_best_params
+        #gbr_best_params = (cv_params_gbr.best_estimator_,
+        #                 cv_params_gbr.best_score_,
+        #                 cv_params_gbr.best_params_)
+        return cv_params_rf.cv_results_, cv_params_gbr.cv_results_
 
     def cv_score(self, X, y, param_grid_rf, param_grid_gb, k=5):
 
@@ -134,8 +139,8 @@ class MyModel():
 
         for train_index, test_index in kf.split(X):
 
-            X_train, X_test = X[train_index], X[test_index]
-            y_train, y_test = y[train_index], y[test_index]
+            X_train, X_test = X.iloc[train_index], X.iloc[test_index]
+            y_train, y_test = y.iloc[train_index], y.iloc[test_index]
 
 
             train_predicted = model_rf.predict(X_train)
@@ -170,7 +175,8 @@ class MyModel():
         return np.mean(RMS)'''
 
 if __name__ == '__main__':
-
+    from model import MyModel as m
+    start = time.time()
     org_df = pd.read_excel('Downloads/Monsanto Dataset Sample.xlsx', header=1)
     rainfall_df = pd.read_csv('weather_data.csv')
 
@@ -193,17 +199,30 @@ if __name__ == '__main__':
     X, y = featurize(merged, X_cols, y_col, dummy_col, split=False)
 
     rf_param_grid = {'max_features': [0.33, 0.5, 'auto'],
-                     'min_sample_leaf': [15, 45, 75],
+                     'min_samples_leaf': [15, 45, 75],
                      'n_estimators': [10000],
                      'oob_score': [True],
                      'n_jobs': [-1]}
 
     gb_param_grid = {'min_samples_split': [1000, 1500, 2000],
-                     'min_sample_leaf': [15, 45, 75],
+                     'min_samples_leaf': [15, 45, 75],
                      'max_depth': [4, 5, 7],
                      'max_features': ['sqrt'],
                      'subsample': [0.8],
                      'n_estimators': [10000]}
-    print (cv_score(X, y, param_grid_rf = rf_param_grid,
-                          param_grid_gb = gb_param_grid,
-                          k=10))
+    model = m()
+    #print (model.cv_score(X, y, param_grid_rf = rf_param_grid,
+    #                      param_grid_gb = gb_param_grid,
+    #                      k=10))
+    gsearch_rf = GridSearchCV(RandomForestRegressor(), rf_param_grid, cv=5)
+    gsearch_rf.fit(X, y)
+
+    gsearch_gb = GridSearchCV(GradientBoostingRegressor(), gb_param_grid, cv=5)
+    gsearch_gb.fit(X, y)
+    print ("RF")
+    print (gsearch_rf.cv_results_)
+    print ('*' * 50)
+    print ("RF")
+    print (gsearch_gb.cv_results_)
+    print ('*' * 50)
+    print (time.time() - start)
