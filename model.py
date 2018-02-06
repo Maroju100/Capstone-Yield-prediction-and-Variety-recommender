@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 #from mpl_toolkits.basemap import Basemap
 from pandas.plotting import scatter_matrix
 from sklearn.metrics import mean_squared_error
@@ -12,7 +12,7 @@ from datetime import datetime
 
 import multiprocessing as mp
 from sklearn.model_selection import train_test_split, GridSearchCV, KFold
-
+import boto3
 #from bs4 import BeautifulSoup
 #from urllib.request import urlopen
 import csv
@@ -177,10 +177,10 @@ class MyModel():
 if __name__ == '__main__':
     from model import MyModel as m
     start = time.time()
-    org_df = pd.read_excel('Downloads/Monsanto Dataset Sample.xlsx', header=1)
+    org_df = pd.read_excel('Monsanto Dataset Sample.xlsx', header=1)
     rainfall_df = pd.read_csv('weather_data.csv')
 
-    altitude_df = pd.read_csv('Downloads/new_village_altitude_data.csv')
+    altitude_df = pd.read_csv('new_village_altitude_data.csv')
     lat_lon_df = pd.read_csv('complete_vill_loc.csv')
     location_df = lat_lon_df[lat_lon_df['Location'] == 'MAHARASHTRA']
 
@@ -214,15 +214,51 @@ if __name__ == '__main__':
     #print (model.cv_score(X, y, param_grid_rf = rf_param_grid,
     #                      param_grid_gb = gb_param_grid,
     #                      k=10))
-    gsearch_rf = GridSearchCV(RandomForestRegressor(), rf_param_grid, cv=5)
+    gsearch_rf = GridSearchCV(RandomForestRegressor(), rf_param_grid, cv=10)
     gsearch_rf.fit(X, y)
+    s3 = boto3.client('s3')
 
-    gsearch_gb = GridSearchCV(GradientBoostingRegressor(), gb_param_grid, cv=5)
+    with StringIO() as f:
+        wr = csv.writer(f)
+        #wr.writerow(['Location', 'Village', 'Elevation'])
+
+        #for village, location in village_dict.items():
+
+
+
+        data = gsearch_rf.cv_results_
+        print (data)
+        wr.writerows(data)
+        #time.sleep(2)
+
+        s3.put_object(Bucket='capstone-web-scrape',
+                      Key='rf_gridsearch_results.csv',
+                      Body=f.getvalue())
+
+    gsearch_gb = GridSearchCV(GradientBoostingRegressor(), gb_param_grid, cv=10)
     gsearch_gb.fit(X, y)
-    print ("RF")
-    print (gsearch_rf.cv_results_)
-    print ('*' * 50)
-    print ("RF")
-    print (gsearch_gb.cv_results_)
+
+    with StringIO() as f:
+        wr = csv.writer(f)
+        #wr.writerow(['Location', 'Village', 'Elevation'])
+
+        #for village, location in village_dict.items():
+
+
+
+        data = gsearch_gb.cv_results_
+        print (data)
+        wr.writerows(data)
+        #time.sleep(2)
+
+        s3.put_object(Bucket='capstone-web-scrape',
+                      Key='gb_gridsearch_results.csv',
+                      Body=f.getvalue())
+
+    #print ("RF")
+    #print (gsearch_rf.cv_results_)
+    #print ('*' * 50)
+    #print ("RF")
+    #print (gsearch_gb.cv_results_)
     print ('*' * 50)
     print (time.time() - start)
