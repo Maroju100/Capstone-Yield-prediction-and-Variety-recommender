@@ -190,6 +190,20 @@ if __name__ == '__main__':
 
     dummy_col = ['Variety']
 
-    X_train, X_test, y_train, y_test = featurize(merged, X_cols,
-                                                 y_col, dummy_col)
-    
+    X, y = featurize(merged, X_cols, y_col, dummy_col, split=False)
+
+    rf_param_grid = {'max_features': [0.33, 0.5, 'auto'],
+                     'min_sample_leaf': [15, 45, 75],
+                     'n_estimators': [10000],
+                     'oob_score': [True],
+                     'n_jobs': [-1]}
+
+    gb_param_grid = {'min_samples_split': [1000, 1500, 2000],
+                     'min_sample_leaf': [15, 45, 75],
+                     'max_depth': [4, 5, 7],
+                     'max_features': ['sqrt'],
+                     'subsample': [0.8],
+                     'n_estimators': [10000]}
+    print (cv_score(X, y, param_grid_rf = rf_param_grid,
+                          param_grid_gb = gb_param_grid,
+                          k=10))
