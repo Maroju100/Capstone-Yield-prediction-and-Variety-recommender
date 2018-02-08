@@ -214,7 +214,7 @@
                    bubble_map.bubbles(bubbles, {
                      popupTemplate: function(geo, data) {
            if ( !data ) return; //IF no data is present, nothing will be displayed in the hover
-         return ['<div class="hoverinfo"><strong>'
+         return ['<div class="hoverinfo style=font-size:500%"><strong>'
         + '<table class="table-example" style="width:300px"><tr><td>State:    '
         + '<td>'+data.state +'</td>'
         +'</td></tr><tr><td>Varieties for '+data.Location1+':</td><td>'
@@ -260,65 +260,102 @@
       <style>
       table, th, td {
           border: 2px solid black;
-          padding: 15px;
+          padding: 5px
+          ;
       }
       </style>
 
       <body>
 
 
-        <table style="height: 60px; width: 100%;">
+        <table>
+          <col width="8">
+          <col width="6">
+          <col width="6">
           <tr>
             <th>Variety</th>
-            <th>Recommendations</th>
+            <th>Recommendations (In order of importance)</th>
+            <th>Total Forecasted Yield</th>
           </tr>
           <tr>
-            <td>1367'</td>
+            <td>1367</td>
+            <td>Harvest: SOONER, Elevation: LOWER, Sow: LATER, Rainfall: MORE </td>
             <td> </td>
           </tr>
           <tr>
-            <td>1301</td>
-            <td></td>
+            <td>1303</td>
+            <td>Elevation: HIGHER, Sow: SOONER, Harvest: SOONER, Rainfall: LESS </td>
+            <td> </td>
           </tr>
           <tr>
             <td>1351</td>
-            <td></td>
+            <td>Harvest: SOONER, Rainfall: LESS, Elevation: LOWER, Sow: LATER </td>
+            <td> </td>
           </tr>
           <tr>
             <td>1355</td>
-            <td></td>
+            <td>Elevation: LOWER, Sow: SOONER, Rainfall: MORE, Harvest: SOONER</td>
+            <td> </td>
           </tr>
           <tr>
             <td>1361</td>
-            <td></td>
+            <td>Harvest: SOONER, Sow: SOONER, Elevation: HIGHER, Rainfall: MORE</td>
+            <td> </td>
           </tr>
           <tr>
             <td>1357</td>
+            <td>Sow: SOONER, Elevation: LOWER, Rainfall: MORE, Harvest: SOONER</td>
             <td></td>
           </tr>
           <tr>
             <td>1315</td>
-            <td></td>
+            <td>Elevation: HIGHER, Rainfall: MORE, Harvest: LATER, Sow: SOONER</td>
+            <td> </td>
           </tr>
           <tr>
             <td>1354</td>
-            <td></td>
+            <td>Sow: SOONER, Rainfall: LESS, Elevation: HIGHER, Harvest: SOONER</td>
+            <td> </td>
           </tr>
           <tr>
-            <td>Eve</td>
-            <td></td>
+            <td>1302</td>
+            <td>Elevation: HIGHER, Rainfall: MORE, Harvest: SOONER, Sow: LATER</td>
+            <td> </td>
           </tr>
           <tr>
-            <td>Eve</td>
-            <td></td>
+            <td>1301</td>
+            <td>Sow: LATER, Elevation: HIGHER, Harvest: SOONER, Rainfall: MORE</td>
+            <td> </td>
           </tr>
           <tr>
-            <td>Eve</td>
+            <td>1312</td>
             <td></td>
+            <td> </td>
           </tr>
           <tr>
-            <td>Eve</td>
+            <td>1313</td>
             <td></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>1317</td>
+            <td></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>1319</td>
+            <td></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>1321</td>
+            <td></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>1322</td>
+            <td></td>
+            <td> </td>
           </tr>
         </table>
 
