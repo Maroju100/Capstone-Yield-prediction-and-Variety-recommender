@@ -42,15 +42,15 @@ Finally, the varieties were converted to dummy variables.
 ## Modeling
 
 Inference and Recommendations:
-*Regression for a better understanding of the coefficients and to recommend the varieties.
-*Matrix Factorization - Singular Value Decomposition (SVD)
+* Regression for a better understanding of the coefficients and to recommend the varieties.
+* Matrix Factorization - Singular Value Decomposition (SVD)
 
 ![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/regression_coefs_capstone.png)
 
 Prediction models:
 
-*Random Forest Regressor 
-*Gradient Boosted Regressor
+* Random Forest Regressor 
+* Gradient Boosted Regressor
 
 ## Evaluation
 
