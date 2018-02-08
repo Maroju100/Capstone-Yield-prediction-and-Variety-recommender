@@ -24,18 +24,28 @@ The Gross Yield was removed and the response was converted to Dried Yield Per Ac
 
 The Sown and Harvest dates were combined to create the Days Till Harvest. 
 
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/days_till_harvest_scatter.png)
+
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/days_till_harvest_boxplot.png)
+
 The Sowing Month and Sowing Week were combined to create the Sowing Week of Year.
 
-The weather and location data (latitude, longitude, elevation) was aggregated. 
-For regression the data may also need to be transformed to the spline basis (polynomial basis?). 
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/sowing_week_year_hist.png)
 
-The varieties were converted to dummy variables.
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/sowing_week_year_boxplot.png)
+
+The weather data was aggregated based on the first 3 months after the plant was sown.
+For regression the data was also transformed to degree 2 and 3 polynomials and those models were also compared. 
+
+Finally, the varieties were converted to dummy variables.
 
 ## Modeling
 
 Inference and Recommendations:
 Regression for a better understanding of the coefficients and to recommend the varieties.
 Matrix Factorization - Singular Value Decomposition (SVD)
+
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/regression_coefs_capstone.png)
 
 Prediction models:
 Random Forest Regressor 
@@ -44,6 +54,8 @@ Gradient Boosted Regressor
 ## Evaluation
 
 10-fold cross validation 
+
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/capstone_test_errors.png)
 
 If information can be obtained. The model could be validated with historical results in those areas too. 
  
