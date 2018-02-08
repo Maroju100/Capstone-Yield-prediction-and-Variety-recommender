@@ -16,7 +16,7 @@ The problem is to estimate the amount of seed that will be required for regions 
 I received anonymized crop data from a major global seed company, which contains the yield for different varieties at different locations. 
 
 ### Weather and Location Data
-The location data (latitude, longitude, elevation) included in the dataset is not anonymized and can be used to “scrape” or obtain weather data based on the date when the variety was sowed (Indian Meteorological Department, data.gov.in). Using the same locations and date
+The location data included in the dataset is not anonymized and was used to “scrape” or obtain weather data based on the date when the variety was sowed (Indian Meteorological Department, data.gov.in). I also gathered latitude, longitude and elevation for the different locations and tested these features.  
 
 ## Data Preparation
 
@@ -42,18 +42,19 @@ Finally, the varieties were converted to dummy variables.
 ## Modeling
 
 Inference and Recommendations:
-Regression for a better understanding of the coefficients and to recommend the varieties.
-Matrix Factorization - Singular Value Decomposition (SVD)
+*Regression for a better understanding of the coefficients and to recommend the varieties.
+*Matrix Factorization - Singular Value Decomposition (SVD)
 
 ![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/regression_coefs_capstone.png)
 
 Prediction models:
-Random Forest Regressor 
-Gradient Boosted Regressor
+
+*Random Forest Regressor 
+*Gradient Boosted Regressor
 
 ## Evaluation
 
-10-fold cross validation 
+10-fold cross validation, polynomial models did not perform very well. 
 
 ![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/capstone_test_errors.png)
 
@@ -62,6 +63,10 @@ If information can be obtained. The model could be validated with historical res
 ## Deployment
 
 Interface with map of India and the relevant states highlighted. The bubbles present on the states would display, when hovered over, the locations and the varieties that are recommended along with recommendations for the varieties. 
+
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/Screen%20Shot%202018-02-06%20at%2012.12.04%20AM.png)
+
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/Screen%20Shot%202018-02-07%20at%201.13.22%20AM.png)
 
 ## References
 
