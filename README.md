@@ -16,27 +16,42 @@ The problem is to estimate the amount of seed that will be required for regions 
 I received anonymized crop data from a major global seed company, which contains the yield for different varieties at different locations. 
 
 ### Weather and Location Data
-The location data included in the dataset is not anonymized and can be used to “scrape” or obtain weather data based on the date when the variety was sowed (Indian Meteorological Department, data.gov.in). Using the same locations and date
+The location data (latitude, longitude, elevation) included in the dataset is not anonymized and can be used to “scrape” or obtain weather data based on the date when the variety was sowed (Indian Meteorological Department, data.gov.in). Using the same locations and date
 
 ## Data Preparation
 
-The gross yield was removed 
+The Gross Yield was removed and the response was converted to Dried Yield Per Acre (Dried Yield / Standing Area).
+
 The Sown and Harvest dates were combined to create the Days Till Harvest. 
 
-The categorical variables need to be converted to dummy variables. The weather and location (latitude, longitude) data was cleaned and transformed. For regression the data may also need to be transformed to the spline basis (polynomial basis?). 
+The Sowing Month and Sowing Week were combined to create the Sowing Week of Year.
+
+The weather and location data (latitude, longitude, elevation) was aggregated. 
+For regression the data may also need to be transformed to the spline basis (polynomial basis?). 
+
+The varieties were converted to dummy variables.
 
 ## Modeling
 
-Regression for a better understanding of the coefficients. Since there will be quite a lot of features, regularization could come in handy. Will attempt and try both Ridge and Lasso.
-Clustering could also be an interesting idea and could lead to some unexpected patterns. 
-Possibly building a graph of varieties 
-If the model is just based on prediction than Random Forest or Gradient Boosted models could also work.
+Inference and Recommendations:
+Regression for a better understanding of the coefficients and to recommend the varieties.
+Matrix Factorization - Singular Value Decomposition (SVD)
+
+Prediction models:
+Random Forest Regressor 
+Gradient Boosted Regressor
 
 ## Evaluation
-if information can be obtained. The model could be validated with historical results in those areas too. 
+
+10-fold cross validation 
+
+If information can be obtained. The model could be validated with historical results in those areas too. 
  
 ## Deployment
 
-A website could be used here to present the findings. If location data is provided, then the regions could be visualized on a map and each area would contain information on the recommended crop varieties for that region. 
+Interface with map of India and the relevant states highlighted. The bubbles present on the states would display, when hovered over, the locations and the varieties that are recommended along with recommendations for the varieties. 
 
 ## References
+
+Indian Meteorological Department, http://hydro.imd.gov.in/hydrometweb/(S(caavbb45wqmmz4q1zopq1c45))/DistrictRaifall.aspx
+https://www.whatismyelevation.com
