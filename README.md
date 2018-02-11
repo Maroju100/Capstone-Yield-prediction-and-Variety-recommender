@@ -64,9 +64,9 @@ If information can be obtained. The model could be validated with historical res
 
 Interface with map of India and the relevant states highlighted. The bubbles present on the states would display, when hovered over, the locations and the varieties that are recommended along with recommendations for the varieties. 
 
-![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/Screen%20Shot%202018-02-06%20at%2012.12.04%20AM.png)
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/img/Screen%20Shot%202018-02-06%20at%2012.12.04%20AM.png)
 
-![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/Screen%20Shot%202018-02-07%20at%201.13.22%20AM.png)
+![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/img/Screen%20Shot%202018-02-07%20at%201.13.22%20AM.png)
 
 ## References
 
