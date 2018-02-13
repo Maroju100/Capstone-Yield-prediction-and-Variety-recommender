@@ -14,6 +14,16 @@ from sklearn.preprocessing import StandardScaler
 
 def transform_orginal(df, location_df):
     '''
+    The function performs a series of transformations to the input DataFrame:
+        - The misspelled location names were corrected
+        - New columns were created, Year, Sow Month, Sowing Week, etc
+        - A new response column/variable was made by dividing the dried yield by
+          the standing area of the field
+        - The datetime variables were converted to days since the start of the
+          respective year
+        - The location of MAHARASHTRA was split into 5 smaller locations, due to
+          the large size of the state
+
     df (DataFrame): DataFrame containing the crop data. The different seasons,
                     varieties, locations, size of farms along with the dry and
                     gross yield.
@@ -21,11 +31,10 @@ def transform_orginal(df, location_df):
     location_df (DataFrame): DataFrame containing the latitude and longitude for
                              the different villages present in MAHARASHTRA.
 
-    The function
-    Add the splitting of 'MAHARASHTRA' to four different regions.
     '''
     location_df.drop(columns='Unnamed: 0', inplace=True)
 
+    #Starting the transformations that are made to the input df
     df.loc[df['Location'] == 'BELLARY', 'Location'] =  'BALLARI'
     df['YEAR'] = df['Sown \nDate'].apply(lambda x: x.year)
     df['Sow Month'] = df['Sown \nDate'].apply(lambda x: x.month)
@@ -54,6 +63,8 @@ def transform_orginal(df, location_df):
                                                     / 86400
                                                  )
                                               )
+
+    #Using KMeans clustering to split location MAHARASHTRA into 5 sub-locations
     cluster_dict = {0:'3', 1:'4', 2:'1', 3:'', 4:'2'}
 
     km = KMeans(n_clusters=5, random_state=0, n_init=15, max_iter=400, n_jobs=-1)
@@ -65,6 +76,8 @@ def transform_orginal(df, location_df):
 
     vil_names = [location_df[clusters == i]['Village'].values for i in range(5)]
 
+    #Changing names of locations from MAHARASHTRA to their respective
+    #sub-location
     for i in range(5):
         #df2.loc[df2['Village'].values in vil_names[i], 'Location'] = 'MAHARASHTRA'+ cluster_dict[i]
         df['Location'] = df['Village'].apply(lambda x:
@@ -76,12 +89,21 @@ def transform_orginal(df, location_df):
 
     return df
 
-#AFTER transform_orginal(), THE DATAFRAME HAS COLUMNS YEAR AND SOW MONTH. THE DF
-#ALSO HAS 4 EXTRA LOCATIONS, NAMELY MAHARASHTRA1, MAHARASHTRA2...
 
 def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
     '''
+    The function takes in a DataFrame and weather, location DataFrames and
+    returns a merged DataFrame which contains all the input DataFrames
+
+    df(DataFrame): The DataFrame containing the crop and farm information
+    rainfall_df(DataFrame): The DataFrame containing the rainfall data for the
+                            different locations
+    altitude_df(DataFrame): The DataFrame containing the elevation data for the
+                            different locations
+    lat_lon_df(DataFrame): The DataFrame containing the latitude and longitude
+                           data for the different locations
     '''
+
     lat_lon_df.drop(columns='Unnamed: 0', inplace=True)
     #altitude_df.drop(columns='Unnamed: 0', inplace=True)
 
@@ -98,6 +120,8 @@ def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
 
     vil_names = [location_df[clusters == i]['Village'].values for i in range(5)]
 
+    #Renaming the locations in the other DataFrames according to the
+    #sub-locations from transform_original()
     for data in [lat_lon_df, altitude_df]:
         for i in range(5):
             #df2.loc[df2['Village'].values in vil_names[i], 'Location'] = 'MAHARASHTRA'+ cluster_dict[i]
@@ -110,6 +134,8 @@ def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
 
     rain_org_df = pd.merge(df, rainfall_df, on=['Location', 'YEAR'])
 
+    #The Rainfall is aggregated based on the rainfall received during the first
+    #three months after the crop has been sown
     rain_org_df['Rainfall'] = rain_org_df.apply(lambda x:
                                                 (x[str(x['Sow Month'])] +
                                                  x[str(x['Sow Month'] + 1)] +
@@ -135,6 +161,21 @@ def merge_transform(df, rainfall_df, altitude_df, lat_lon_df):
 
 def featurize(df, X_cols, y_col, dummy_cols, split=True):
     '''
+    This functions takes in an input DataFrame along with lists of column names
+    that will be used in creating the feature matrix and the response variable.
+    Returns standardized and dummy encoded X and y or
+    X_train, X_test, y_train, y_test based on the value of "split"
+
+    df(DataFrame): The input DataFrame on which the standardization and dummy
+                   encoding is performed
+    X_cols(list): The list of strings that represents the column names that will
+                  be part of the feature matrix, X
+    y_col(string): String representing the column name that will be used as the
+                   response
+    dummy_cols(list): List of strings that represent the column names that will
+                      dummy encoded in the feature matrix, X
+    split(bool): If True, X and y will be split into Train and Test
+
     '''
     #X_initial = df[X_cols]
     #y = df[y_col]
@@ -142,17 +183,20 @@ def featurize(df, X_cols, y_col, dummy_cols, split=True):
 
     #X = pd.get_dummies(X_initial, columns=dummy_cols)
 
-
+    #Initializing sklearn StandardScaler
     ss = StandardScaler()
     X_initial = df[X_cols]
     y = df[y_col]
     ss.fit(X_initial)
     X_scaled = pd.DataFrame(ss.transform(X_initial), columns=X_cols)
+
+    #Adding the dummy_col column to the scaled DataFrame
     X_new = pd.concat([X_scaled, df[dummy_cols].astype(str)], axis=1)
-    #print (X_new.head())
+
+    #Dummy encoding the scaled DataFrame
     X = pd.get_dummies(X_new, columns=dummy_cols)
     X.dropna(inplace=True)
-    
+
     if not split:
         return X, y
 
@@ -161,7 +205,20 @@ def featurize(df, X_cols, y_col, dummy_cols, split=True):
     return X_train, X_test, y_train, y_test
 
 def groups(df, X_cols, y_col, dummy_cols, group_by='Location'):
+    '''
+    This functions takes in an input DataFrame and returns a dictionary that has
+    the locations as keys and X and y for each location as values 
 
+    df(DataFrame): The input DataFrame using which the data is grouped
+    X_cols(list): The list of strings that represents the column names that will
+                  be part of the feature matrix, X
+    y_col(string): String representing the column name that will be used as the
+                   response
+    dummy_cols(list): List of strings that represent the column names that will
+                      dummy encoded in the feature matrix, X
+    group_by(string): Column name that the data will be grouped by
+
+    '''
     group = pd.groupby(by='Location')
     grp_dict = {}
 

@@ -8,20 +8,29 @@ import selenium
 import time
 
 def get_data(state, district, loc_dict, count=0):
-    '''
-    state(str): The specific state which has the district for which the data needs to be collected
-    district(str): The district in the state for which the data needs to be collected
-    loc_dict(dict): Dictionary containing districts to pull data from based on the region of larger
-                    states.
 
-    The function will grab the rainfall data for the years it is available from a specific
-    website.
     '''
+    The function will grab the rainfall data for the years it is available from
+    a specific website and return lists containing the headers and data for each
+    location.
+
+    state(str): The specific state which has the district for which the data
+                needs to be collected
+    district(str): The district in the state for which the data needs to be
+                   collected
+    loc_dict(dict): Dictionary containing districts to pull data from based on
+                    the region of larger states.
+    count(int): Key for districts that are in the same region of CUDDAPAH
+
+    '''
+
+    #Initializing Selenium browser
     browser = webdriver.Firefox()
-
+    #Making get request to Indian Meteorological Department website
     browser.get("http://hydro.imd.gov.in/hydrometweb/(S(wdk1wgqowpasuw55hpmgzg55))/DistrictRaifall.aspx")
-
+    #Selecting drop down menu for states
     select = Select(browser.find_element_by_id('listItems'))
+    #Taking care of the split up region of MAHARASHTRA
 
     if 'MAHARASHTRA' in state:
         st = 'MAHARASHTRA'
@@ -30,10 +39,12 @@ def get_data(state, district, loc_dict, count=0):
         st = state
         dis = district
 
+    #Selecting relevant State
     select.select_by_visible_text(st)
     time.sleep(1)
+    #Selecting drop down menu for Districts
     select2 = Select(browser.find_element_by_id('DistrictDropDownList'))
-
+    #Selecting relevant District
     select2.select_by_visible_text(dis)
 
     browser.find_element_by_id('GoBtn').click()
@@ -43,6 +54,7 @@ def get_data(state, district, loc_dict, count=0):
     soup = BeautifulSoup(table, "lxml")
     table2 = soup.find('table', {'id': 'GridId'})
 
+    #Parsing through the page source and creating a list for the headers in csv
     headers = []
     for th in table2.select("tr th"):
         if th.text.strip() != 'YEAR':
@@ -52,6 +64,8 @@ def get_data(state, district, loc_dict, count=0):
             headers.append(th.text.strip())
     headers.append('Location')
 
+    #Parsing through the page source and creating a list of lists containing the
+    #rainfall information for the relevant district, state
     data = []
     for row in table2.select("tr + tr"):
         rows = []
@@ -91,7 +105,8 @@ if __name__ == '__main__':
                 'KURNOOL':'KURNOOL', 'THENI': 'CUMBAM', 'KHAMMAM': 'SATHUPALLY',
                 'EAST GODAVARI': 'RAJAHAMANDRY', 'PRAKASAM': 'MARKAPUR', 'KARIMNAGAR':'KARIMNAGAR',
                 'WARANGAL': 'WARANGAL', 'GUNTUR': 'GUNTUR', 'BALLARI': 'BALLARI'}
-    #print (len(states), len(districts), len(loc_dict))
+
+    #Writing the tabular rainfall data to csv file weather_data_test.csv
 
     with open("weather_data_test.csv", "w") as f:
         wr = csv.writer(f)
@@ -102,6 +117,10 @@ if __name__ == '__main__':
         for i, z in enumerate(zip(states, districts)):
             state = z[0]
             district = z[1]
+
+            #Ensuring the right district name is used for regions containing
+            #multiple districts
+            
             if i == 0:
                 headers, data = get_data(state, district, loc_dict, count=1)
             if i == 7:

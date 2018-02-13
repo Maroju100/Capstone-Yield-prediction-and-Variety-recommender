@@ -19,20 +19,35 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 
 def get_alt(village, location, browser, state_dict, lat, lon):
-    #executable_path = './phantomjs-2.1.1-linux-x86_64/bin/phantomjs'
+    '''
+    The function takes in the name of the village and it's location along with
+    the coordinates and uses that information to return the elevation of the
+    coordinates/location
 
-    #service_log_path = './log/ghostdriver.log'
+    village(str): String specifying the name of the village for which the
+                  latitude and longitude are returned
+    location(str): String specifying the name of the location for which the
+                  latitude and longitude are returned
+    browser(webdriver): Webdriver object that will be used to make get requests
+                        and for obtaining the page source
+    state_dict(dict): Dictionary mapping the location for each village to the
+                      state. The village name and state will then be used to
+                      search for latitude and longitude
+    lat(float): The latitude for the village in degrees
+    lon(float): The longitude for the village in degrees
+    '''
 
-    #browser = webdriver.PhantomJS()#(executable_path=executable_path, service_log_path=service_log_path)
-
-
+    #Making a get request to website from which elevation data can be acquired
     browser.get("https://www.whatismyelevation.com")
-
+    #Locating element using which location can be entered
     browser.find_element_by_id("change-location").click()
     time.sleep(2)
+
+    #Entering location/coordinates to search for the elevation
     search = browser.find_element_by_id("address")
     search.send_keys('{}, {}'.format(lat, lon))
 
+    #Making sure the changes were registered
     search.send_keys(Keys.ENTER)
     search.send_keys(Keys.ENTER)
     search.send_keys(Keys.ENTER)
@@ -42,11 +57,12 @@ def get_alt(village, location, browser, state_dict, lat, lon):
     #coord = browser.current_url.split('@')[1].split(',')
     soup = BeautifulSoup(text, "lxml")
 
+    #Parsing through the page source to find the elevation for the location
     elevation = soup.find('div', {'id':'elevation'})
     altitude = elevation.find('span', {'class': "value"})
 
-    #browser.quit()
-    #print (altitude.decode().split('>')[1].split('<')[0].replace(',', ''))
+    #Converting to float only if there is elevation data present for this
+    #location
     if len(altitude.decode().split('>')[1].split('<')[0].replace(',', '')) > 0:
         alt = float(altitude.decode().split('>')[1].split('<')[0].replace(',', ''))
     else:
@@ -56,11 +72,12 @@ def get_alt(village, location, browser, state_dict, lat, lon):
 
 if __name__ == '__main__':
     df = pd.read_csv('complete_vill_loc.csv')
-
+    #Reading in the village and location names
     df.drop(columns='Unnamed: 0', inplace=True)
     location_groups = df.groupby(by='Location')
     village_dict = {}
 
+    #Creating dictionary that has village names as keys and locations as values
     for loc, group in location_groups:
         for vill in set(group['Village'].values):
             village_dict[vill] = loc
@@ -69,14 +86,18 @@ if __name__ == '__main__':
               'TAMILNADU', 'TELANGANA', 'ANDHRA PRADESH', 'ANDHRA PRADESH', 'ANDHRA PRADESH',
               'TELANGANA', 'TELANGANA', 'ANDHRA PRADESH']
 
+    #Creating dictionary that has locations as keys and states as values
     state_dict = dict(zip(df['Location'].unique(), states))
 
+    #Initializing headless Selenium webdriver and boto3 client to interact
+    #with AWS S3 bucket
     options = Options()
     options.add_argument('-headless')
     browser = Firefox(executable_path='geckodriver', firefox_options=options)
     #browser = Firefox()
     s3 = boto3.client('s3')
 
+    #Writing the elevation data for each village to csv file in AWS S3 bucket
     with StringIO() as f:
         wr = csv.writer(f)
         wr.writerow(['Location', 'Village', 'Elevation'])
