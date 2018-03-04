@@ -8,7 +8,7 @@ The ideas behind this project can be applied to other crops and can be scaled to
 
 The value of the total seed produced in this region is about $60 million. So a variability of 1.5% in the projected production can result in a loss of about $1 million for a surplus, and $2.5 million for a deficit. Minimizing this uncertainty can be vital especially when scaling up to bigger regions. 
 
-The problem is to estimate the amount of seed that will be required for regions in Southern India and by building a predictive model for the dry yield per acre, the total seed production can be better estimated. Recommendeing specific high yield varieties for the different locations and also providing recommendations for each variety are also other ideas that can be incorporated into the solution. 
+The problem is to estimate the amount of seed that will be required for regions in Southern India and by building a predictive model for the dry yield per acre, the total seed production can be better estimated. Recommending specific high yield varieties for the different locations and also providing recommendations for each variety are also other ideas that can be incorporated into the solution. 
 
 ## Data Understanding
 
