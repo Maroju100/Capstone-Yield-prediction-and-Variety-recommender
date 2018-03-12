@@ -79,6 +79,7 @@ to quantify these effects and hopefully give more precise recommendations.
 
 ## References
 
-Indian Meteorological Department, http://hydro.imd.gov.in/hydrometweb/(S(caavbb45wqmmz4q1zopq1c45))/DistrictRaifall.aspx
-https://www.whatismyelevation.com
+* Indian Meteorological Department, http://hydro.imd.gov.in/hydrometweb/(S(caavbb45wqmmz4q1zopq1c45))/DistrictRaifall.aspx
+* Elevation data, https://www.whatismyelevation.com
+* Latitude and Longitude, https://www.findlatitudeandlongitude.com/
 
