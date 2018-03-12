@@ -70,11 +70,12 @@ Interface with map of India and the relevant states highlighted. The bubbles pre
 
 ## Further Work
 
-* Quantify Recommendations for Varieties: 
+* Quantify Recommendations for Varieties: Currently the direction in which the factors affect yield is available. I would like 
+to quantify these effects and hopefully give more precise recommendations.
 * Incorporate More Weather Variables: Temperature, Humidity, Hours of Sunlight
 * Incorporate Soil Data
-* Gather Location-Based Variety Data for Recommendations
-* Attempt to use mixed models (treating Year as Random Variable)
+* Gather Location-Based Variety Data for Recommendations: If all the varieties can be tested at the different locations, then varieties for which there wasn't data before can be recommended to particular locations
+* Attempt to use mixed models (treating some predictors as Random Variable)
 
 ## References
 
