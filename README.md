@@ -36,8 +36,7 @@ The Sowing Month and Sowing Week were combined to create the Sowing Week of Year
 
 The weather data was aggregated based on the first 3 months after the plant was sown.
 For regression the data was also transformed to degree 2 and 3 polynomials and those models were also compared. 
-
-Finally, the varieties were converted to dummy variables.
+The predictors were also standardized and finally, the varieties were converted to dummy variables.
 
 ## Modeling
 
