@@ -70,11 +70,11 @@ Interface with map of India and the relevant states highlighted. The bubbles pre
 
 ## Further Work
 
-Quantify Recommendations for Varieties
-Incorporate More Weather Variables: Temperature, Humidity, Hours of Sunlight
-Incorporate Soil Data
-Gather Location-Based Variety Data for Recommendations
-Attempt to use mixed models (treating Year as Random Variable)
+* Quantify Recommendations for Varieties
+* Incorporate More Weather Variables: Temperature, Humidity, Hours of Sunlight
+* Incorporate Soil Data
+* Gather Location-Based Variety Data for Recommendations
+* Attempt to use mixed models (treating Year as Random Variable)
 
 ## References
 
