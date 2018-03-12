@@ -8,7 +8,7 @@ The ideas behind this project can be applied to other crops and can be scaled to
 
 The value of the total seed produced in this region is about $60 million. So a variability of 1.5% in the projected production can result in a loss of about $1 million for a surplus, and $2.5 million for a deficit. Minimizing this uncertainty can be vital especially when scaling up to bigger regions. 
 
-The problem is to estimate the amount of seed that will be required for regions in Southern India and by building a predictive model for the dry yield per acre, the total seed production can be better estimated. Recommendeing specific high yield varieties for the different locations and also providing recommendations for each variety are also other ideas that can be incorporated into the solution. 
+The problem is to estimate the amount of seed that will be required for regions in Southern India and by building a predictive model for the dry yield per acre, the total seed production can be better estimated. Recommending specific high yield varieties for the different locations and also providing recommendations for each variety are also other ideas that can be incorporated into the solution. 
 
 ## Data Understanding
 
@@ -68,7 +68,16 @@ Interface with map of India and the relevant states highlighted. The bubbles pre
 
 ![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/img/Screen%20Shot%202018-02-07%20at%201.13.22%20AM.png)
 
+## Further Work
+
+* Quantify Recommendations for Varieties
+* Incorporate More Weather Variables: Temperature, Humidity, Hours of Sunlight
+* Incorporate Soil Data
+* Gather Location-Based Variety Data for Recommendations
+* Attempt to use mixed models (treating Year as Random Variable)
+
 ## References
 
 Indian Meteorological Department, http://hydro.imd.gov.in/hydrometweb/(S(caavbb45wqmmz4q1zopq1c45))/DistrictRaifall.aspx
 https://www.whatismyelevation.com
+
