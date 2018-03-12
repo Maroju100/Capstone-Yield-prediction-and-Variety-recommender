@@ -43,7 +43,7 @@ Finally, the varieties were converted to dummy variables.
 
 Inference and Recommendations:
 * Regression for a better understanding of the coefficients and to recommend the varieties.
-* Matrix Factorization - Singular Value Decomposition (SVD): Matrix factorization was attempted to try to recommend varieties to particular locations for which data was not available. Using the dry yield as a "rating", varieties were recommended and compared to the regression recommendations. This was not entirely successful as domain knowledge along with other factors would be very influential in this area. There are biological and agricultural reasons for variety recommendations and this matrix factorization technique would struggle to incorporate that. 
+* Matrix Factorization - Singular Value Decomposition (SVD): Matrix factorization was attempted to try to recommend varieties to particular locations for which data was not available. Using the dry yield as a "rating", varieties were recommended and compared to the regression recommendations. This was not entirely successful as domain knowledge along with other factors are very influential in this area. There are biological and agricultural reasons for specific varieties being planted at particular locations and this matrix factorization technique would struggle to incorporate that. 
 
 ![alt text](https://github.com/anubhavrana/Capstone-Yield-prediction-and-Variety-recommender/blob/master/img/regression_coefs_capstone.png)
 
