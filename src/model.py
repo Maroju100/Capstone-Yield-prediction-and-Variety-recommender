@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-#import matplotlib.pyplot as plt
-#from mpl_toolkits.basemap import Basemap
 from pandas.plotting import scatter_matrix
 from sklearn.metrics import mean_squared_error
 from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
@@ -12,20 +10,14 @@ from datetime import datetime
 from io import BytesIO, StringIO
 import multiprocessing as mp
 from sklearn.model_selection import train_test_split, GridSearchCV, KFold
-import boto3
-#from bs4 import BeautifulSoup
-#from urllib.request import urlopen
 import csv
-
-#from selenium import webdriver
-#from selenium.webdriver.support.ui import Select
-#from selenium.webdriver.common.keys import Keys
-#import selenium
 from transform import *
 
 class MyModel():
     '''
-    
+    Class used to train and cross validate different models simultaneously or
+    in parallel. 
+
     '''
 
     def __init__(self):
@@ -176,6 +168,7 @@ class MyModel():
         return np.mean(RMS)'''
 
 if __name__ == '__main__':
+
     from model import MyModel as m
     start = time.time()
     org_df = pd.read_excel('Monsanto Dataset Sample.xlsx', header=1)
@@ -212,9 +205,7 @@ if __name__ == '__main__':
                      'subsample': [0.8],
                      'n_estimators': [10000]}
     model = m()
-    #print (model.cv_score(X, y, param_grid_rf = rf_param_grid,
-    #                      param_grid_gb = gb_param_grid,
-    #                      k=10))
+
     gsearch_rf = GridSearchCV(RandomForestRegressor(), rf_param_grid, cv=10)
     gsearch_rf.fit(X, y)
     s3 = boto3.client('s3')
@@ -228,7 +219,7 @@ if __name__ == '__main__':
 
 
         data = gsearch_rf.cv_results_
-        print (data)
+
         wr.writerows(data)
         #time.sleep(2)
 
@@ -261,5 +252,5 @@ if __name__ == '__main__':
     #print ('*' * 50)
     #print ("RF")
     #print (gsearch_gb.cv_results_)
-    print ('*' * 50)
+    #print ('*' * 50)
     print (time.time() - start)
